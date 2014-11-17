@@ -75,7 +75,7 @@
 -(void)btnDown:(UIButton*)btn
 {
     NSLog(@"%ld",btn.tag-5000);
-    //    进入单店页面
+    //    进入单店页面！！！
 }
 
 -(void)clickPrise:(UIButton*)btn
