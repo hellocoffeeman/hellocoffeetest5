@@ -143,7 +143,7 @@
                 </button>
                 <button opaque="NO" tag="5002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8y-5K-hl5">
                     <rect key="frame" x="-8" y="341" width="608" height="67"/>
-                    <color key="backgroundColor" patternImage="61CE3654-A13C-4296-BCF0-6468B6010529" colorSpace="pattern"/>
+                    <color key="backgroundColor" patternImage="065FF43A-BCD0-4D7E-944D-815D2FEBC55E" colorSpace="pattern"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="67" id="5gS-Rr-K6h"/>
                         <constraint firstAttribute="height" constant="67" id="AGL-P9-nl2"/>
@@ -257,6 +257,12 @@
                     <exclude reference="r2W-cK-PPA"/>
                     <exclude reference="sDU-Yb-3q9"/>
                     <exclude reference="ttz-Mq-IIS"/>
+                    <exclude reference="5Uq-eh-azz"/>
+                    <exclude reference="CXD-Id-Ukx"/>
+                    <exclude reference="ID9-a2-X0f"/>
+                    <exclude reference="PcL-eo-Fgq"/>
+                    <exclude reference="gY0-OL-fFc"/>
+                    <exclude reference="hwH-tg-phK"/>
                     <exclude reference="3An-nw-5Zy"/>
                     <exclude reference="K9G-jn-NXM"/>
                     <exclude reference="QNJ-yH-7J1"/>
@@ -265,12 +271,6 @@
                     <exclude reference="hVz-he-jDX"/>
                     <exclude reference="hqQ-Ne-H8v"/>
                     <exclude reference="ypx-ut-2FI"/>
-                    <exclude reference="5Uq-eh-azz"/>
-                    <exclude reference="CXD-Id-Ukx"/>
-                    <exclude reference="ID9-a2-X0f"/>
-                    <exclude reference="PcL-eo-Fgq"/>
-                    <exclude reference="gY0-OL-fFc"/>
-                    <exclude reference="hwH-tg-phK"/>
                 </mask>
             </variation>
             <variation key="widthClass=compact">
@@ -301,6 +301,12 @@
                     <exclude reference="j4R-tr-1Ku"/>
                     <include reference="sDU-Yb-3q9"/>
                     <include reference="ttz-Mq-IIS"/>
+                    <include reference="5Uq-eh-azz"/>
+                    <exclude reference="J0E-vj-aT6"/>
+                    <include reference="gY0-OL-fFc"/>
+                    <include reference="hwH-tg-phK"/>
+                    <exclude reference="pYa-Bm-Sgq"/>
+                    <exclude reference="vQK-G6-ui9"/>
                     <include reference="3An-nw-5Zy"/>
                     <exclude reference="7Ld-e7-42f"/>
                     <include reference="K9G-jn-NXM"/>
@@ -309,12 +315,6 @@
                     <exclude reference="b3S-FN-Dn3"/>
                     <exclude reference="xoj-Ij-q27"/>
                     <include reference="ypx-ut-2FI"/>
-                    <include reference="5Uq-eh-azz"/>
-                    <exclude reference="J0E-vj-aT6"/>
-                    <include reference="gY0-OL-fFc"/>
-                    <include reference="hwH-tg-phK"/>
-                    <exclude reference="pYa-Bm-Sgq"/>
-                    <exclude reference="vQK-G6-ui9"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=regular">
@@ -342,6 +342,12 @@
                     <exclude reference="c0s-Xh-BvW"/>
                     <exclude reference="j4R-tr-1Ku"/>
                     <include reference="r2W-cK-PPA"/>
+                    <include reference="CXD-Id-Ukx"/>
+                    <include reference="ID9-a2-X0f"/>
+                    <exclude reference="J0E-vj-aT6"/>
+                    <include reference="PcL-eo-Fgq"/>
+                    <exclude reference="pYa-Bm-Sgq"/>
+                    <exclude reference="vQK-G6-ui9"/>
                     <exclude reference="7Ld-e7-42f"/>
                     <exclude reference="MUw-kU-sku"/>
                     <include reference="QNJ-yH-7J1"/>
@@ -350,19 +356,13 @@
                     <include reference="hVz-he-jDX"/>
                     <include reference="hqQ-Ne-H8v"/>
                     <exclude reference="xoj-Ij-q27"/>
-                    <include reference="CXD-Id-Ukx"/>
-                    <include reference="ID9-a2-X0f"/>
-                    <exclude reference="J0E-vj-aT6"/>
-                    <include reference="PcL-eo-Fgq"/>
-                    <exclude reference="pYa-Bm-Sgq"/>
-                    <exclude reference="vQK-G6-ui9"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="162" y="355"/>
         </view>
     </objects>
     <resources>
-        <image name="61CE3654-A13C-4296-BCF0-6468B6010529" width="256" height="256">
+        <image name="065FF43A-BCD0-4D7E-944D-815D2FEBC55E" width="256" height="256">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGTk9YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QEQcI
 ExQZHh8nKzIzNDw/QkhLVSRudWxs1QkKCwwNDg8QERJWTlNTaXplViRjbGFzc1xOU0ltYWdlRmxhZ3NW

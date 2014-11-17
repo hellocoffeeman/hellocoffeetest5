@@ -72,11 +72,19 @@
         return  cell;
     
 }
-//-(void)btnDown:(UIButton*)btn
-//{
-//    NSLog(@"%ld",btn.tag);
-//    //    进入单店页面
-//    }
+-(void)btnDown:(UIButton*)btn
+{
+    NSLog(@"%ld",btn.tag-5000);
+    //    进入单店页面
+}
+
+-(void)clickPrise:(UIButton*)btn
+{
+    NSLog(@"%ld",btn.tag-6000);
+//
+    
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
