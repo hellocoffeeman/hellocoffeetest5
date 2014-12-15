@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchMainCellReuse" rowHeight="192" id="KGk-i7-Jjw" customClass="SearchMainCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KgQ-g6-CGO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="一杯咖啡一本书独享发呆时光" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bax-aN-W4u">
+                        <rect key="frame" x="139" y="69" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="KgQ-g6-CGO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="4HG-fL-Syb"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="bax-aN-W4u" secondAttribute="bottom" constant="49" id="6Vj-xK-WEX"/>
+                    <constraint firstItem="bax-aN-W4u" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="50" id="DNi-v0-0WY"/>
+                    <constraint firstItem="KgQ-g6-CGO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="LtH-kk-ZxW"/>
+                    <constraint firstItem="bax-aN-W4u" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="MMp-SO-gWZ"/>
+                    <constraint firstItem="KgQ-g6-CGO" firstAttribute="centerX" secondItem="bax-aN-W4u" secondAttribute="centerX" id="NPW-yz-Ktx"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="KgQ-g6-CGO" secondAttribute="bottom" constant="1" id="Y2f-fn-Tle"/>
+                    <constraint firstItem="bax-aN-W4u" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="30" id="pl9-X5-jDk"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="4HG-fL-Syb"/>
+                        <exclude reference="LtH-kk-ZxW"/>
+                        <exclude reference="NPW-yz-Ktx"/>
+                        <exclude reference="Y2f-fn-Tle"/>
+                        <exclude reference="6Vj-xK-WEX"/>
+                        <exclude reference="DNi-v0-0WY"/>
+                        <exclude reference="MMp-SO-gWZ"/>
+                        <exclude reference="pl9-X5-jDk"/>
+                    </mask>
+                </variation>
+                <variation key="widthClass=compact">
+                    <mask key="constraints">
+                        <include reference="4HG-fL-Syb"/>
+                        <include reference="LtH-kk-ZxW"/>
+                        <include reference="NPW-yz-Ktx"/>
+                        <include reference="Y2f-fn-Tle"/>
+                        <include reference="6Vj-xK-WEX"/>
+                        <include reference="DNi-v0-0WY"/>
+                        <include reference="MMp-SO-gWZ"/>
+                        <include reference="pl9-X5-jDk"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgLabel" destination="bax-aN-W4u" id="ASe-bV-ziL"/>
+                <outlet property="searchImg" destination="KgQ-g6-CGO" id="H91-8L-jI2"/>
+            </connections>
+            <point key="canvasLocation" x="246" y="378.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SecondCommentCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="310"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="1qB-ED-AvN">
+                        <rect key="frame" x="48" y="8" width="225" height="240"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="243" id="Kgv-nc-mxw"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Kgv-nc-mxw"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Kgv-nc-mxw"/>
+                            </mask>
+                        </variation>
+                    </tableView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="shijianzhou-xian.png" translatesAutoresizingMaskIntoConstraints="NO" id="wIH-a2-A6K">
+                        <rect key="frame" x="25" y="0.0" width="5" height="310"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="shijianzhou-biaoti.png" translatesAutoresizingMaskIntoConstraints="NO" id="h5N-5X-mNU">
+                        <rect key="frame" x="8" y="28" width="40" height="40"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lvb-GJ-aai">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YkS-nx-heL">
+                        <rect key="frame" x="130" y="265" width="60" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" image="yonghupinglun-dengduo-kuang.png">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YkS-nx-heL" firstAttribute="bottom" secondItem="wIH-a2-A6K" secondAttribute="bottom" id="74K-mL-iBd"/>
+                    <constraint firstItem="1qB-ED-AvN" firstAttribute="centerX" secondItem="lvb-GJ-aai" secondAttribute="centerX" id="87Y-bP-6hz"/>
+                    <constraint firstItem="h5N-5X-mNU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="8eS-oL-ANb"/>
+                    <constraint firstItem="h5N-5X-mNU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-4" id="8ee-HO-QDF"/>
+                    <constraint firstItem="lvb-GJ-aai" firstAttribute="bottom" secondItem="wIH-a2-A6K" secondAttribute="bottom" id="EUJ-HQ-Z4d"/>
+                    <constraint firstItem="1qB-ED-AvN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="LLa-Vv-8t6"/>
+                    <constraint firstItem="h5N-5X-mNU" firstAttribute="centerX" secondItem="wIH-a2-A6K" secondAttribute="centerX" id="PYA-LU-ns6"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="wIH-a2-A6K" secondAttribute="bottom" constant="-9" id="Tus-lh-bH3"/>
+                    <constraint firstItem="wIH-a2-A6K" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="c4R-qe-Dl9"/>
+                    <constraint firstItem="YkS-nx-heL" firstAttribute="centerX" secondItem="lvb-GJ-aai" secondAttribute="centerX" id="hsv-30-XnA"/>
+                    <constraint firstItem="lvb-GJ-aai" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="k2X-eF-fEh"/>
+                    <constraint firstItem="lvb-GJ-aai" firstAttribute="top" secondItem="1qB-ED-AvN" secondAttribute="bottom" constant="36" id="kXf-lT-Oya"/>
+                    <constraint firstItem="1qB-ED-AvN" firstAttribute="leading" secondItem="h5N-5X-mNU" secondAttribute="trailing" constant="4" id="uTA-7K-OOn"/>
+                    <constraint firstItem="1qB-ED-AvN" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ziV-v7-v1t"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="subviews">
+                        <exclude reference="lvb-GJ-aai"/>
+                    </mask>
+                    <mask key="constraints">
+                        <exclude reference="Tus-lh-bH3"/>
+                        <exclude reference="c4R-qe-Dl9"/>
+                        <exclude reference="8eS-oL-ANb"/>
+                        <exclude reference="8ee-HO-QDF"/>
+                        <exclude reference="PYA-LU-ns6"/>
+                        <exclude reference="87Y-bP-6hz"/>
+                        <exclude reference="LLa-Vv-8t6"/>
+                        <exclude reference="uTA-7K-OOn"/>
+                        <exclude reference="ziV-v7-v1t"/>
+                        <exclude reference="74K-mL-iBd"/>
+                        <exclude reference="hsv-30-XnA"/>
+                        <exclude reference="EUJ-HQ-Z4d"/>
+                        <exclude reference="k2X-eF-fEh"/>
+                        <exclude reference="kXf-lT-Oya"/>
+                    </mask>
+                </variation>
+                <variation key="widthClass=compact">
+                    <mask key="subviews">
+                        <include reference="lvb-GJ-aai"/>
+                    </mask>
+                    <mask key="constraints">
+                        <include reference="Tus-lh-bH3"/>
+                        <include reference="c4R-qe-Dl9"/>
+                        <include reference="8eS-oL-ANb"/>
+                        <include reference="8ee-HO-QDF"/>
+                        <include reference="PYA-LU-ns6"/>
+                        <include reference="87Y-bP-6hz"/>
+                        <include reference="LLa-Vv-8t6"/>
+                        <include reference="uTA-7K-OOn"/>
+                        <include reference="ziV-v7-v1t"/>
+                        <include reference="74K-mL-iBd"/>
+                        <include reference="hsv-30-XnA"/>
+                        <include reference="EUJ-HQ-Z4d"/>
+                        <include reference="k2X-eF-fEh"/>
+                        <include reference="kXf-lT-Oya"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="commentTableView" destination="1qB-ED-AvN" id="SnN-ch-TkZ"/>
+            </connections>
+            <point key="canvasLocation" x="308" y="348"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="shijianzhou-biaoti.png" width="40" height="40"/>
+        <image name="shijianzhou-xian.png" width="4" height="181"/>
+        <image name="yonghupinglun-dengduo-kuang.png" width="50" height="44"/>
+    </resources>
+</document>

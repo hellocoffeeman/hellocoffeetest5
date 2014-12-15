@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="137" id="KGk-i7-Jjw" customClass="TopPicturesCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZsX-Ga-w7M" customClass="PageScrollView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="ZsX-Ga-w7M" secondAttribute="bottom" constant="-9" id="0Ov-cm-wjh"/>
+                    <constraint firstAttribute="trailing" secondItem="ZsX-Ga-w7M" secondAttribute="trailing" id="2nH-3i-aQE"/>
+                    <constraint firstItem="ZsX-Ga-w7M" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="7BP-1K-Edc"/>
+                    <constraint firstItem="ZsX-Ga-w7M" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8F2-4t-AwT"/>
+                    <constraint firstAttribute="trailing" secondItem="ZsX-Ga-w7M" secondAttribute="trailing" id="8um-uO-0d0"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ZsX-Ga-w7M" secondAttribute="bottom" constant="-9" id="T7t-Ik-N1N"/>
+                    <constraint firstItem="ZsX-Ga-w7M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Wht-0t-DPx"/>
+                    <constraint firstItem="ZsX-Ga-w7M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="iTg-8C-klB"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="0Ov-cm-wjh"/>
+                        <exclude reference="2nH-3i-aQE"/>
+                        <exclude reference="7BP-1K-Edc"/>
+                        <exclude reference="Wht-0t-DPx"/>
+                    </mask>
+                </variation>
+                <variation key="widthClass=compact">
+                    <mask key="subviews">
+                        <include reference="ZsX-Ga-w7M"/>
+                    </mask>
+                    <mask key="constraints">
+                        <include reference="0Ov-cm-wjh"/>
+                        <include reference="2nH-3i-aQE"/>
+                        <include reference="7BP-1K-Edc"/>
+                        <exclude reference="8F2-4t-AwT"/>
+                        <exclude reference="8um-uO-0d0"/>
+                        <exclude reference="T7t-Ik-N1N"/>
+                        <include reference="Wht-0t-DPx"/>
+                        <exclude reference="iTg-8C-klB"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="pageScrollView" destination="ZsX-Ga-w7M" id="yEq-fS-yp3"/>
+            </connections>
+            <point key="canvasLocation" x="211" y="414"/>
+        </tableViewCell>
+    </objects>
+</document>

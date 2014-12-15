@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WantSeachViewController">
+            <connections>
+                <outlet property="mainCollectionView" destination="riB-Ws-zQ8" id="isM-uo-YfE"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="riB-Ws-zQ8">
+                    <rect key="frame" x="0.0" y="25" width="600" height="575"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="0.0" id="RCj-Ow-bM9">
+                        <size key="itemSize" width="187" height="187"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="riB-Ws-zQ8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="207-8T-hr3"/>
+                <constraint firstAttribute="bottom" secondItem="riB-Ws-zQ8" secondAttribute="bottom" id="5dJ-J4-aQC"/>
+                <constraint firstItem="riB-Ws-zQ8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8sY-3q-lt0"/>
+                <constraint firstAttribute="trailing" secondItem="riB-Ws-zQ8" secondAttribute="trailing" id="A8I-2Z-42O"/>
+                <constraint firstItem="riB-Ws-zQ8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="YUp-Yh-0nm"/>
+                <constraint firstAttribute="trailing" secondItem="riB-Ws-zQ8" secondAttribute="trailing" id="gkx-hQ-358"/>
+                <constraint firstItem="riB-Ws-zQ8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="hmv-uB-76F"/>
+                <constraint firstItem="riB-Ws-zQ8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="25" id="tmz-f5-q3e"/>
+                <constraint firstAttribute="bottom" secondItem="riB-Ws-zQ8" secondAttribute="bottom" id="yBl-fg-O0V"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="207-8T-hr3"/>
+                    <exclude reference="YUp-Yh-0nm"/>
+                    <exclude reference="gkx-hQ-358"/>
+                    <exclude reference="hmv-uB-76F"/>
+                    <exclude reference="yBl-fg-O0V"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="riB-Ws-zQ8"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="207-8T-hr3"/>
+                    <exclude reference="YUp-Yh-0nm"/>
+                    <include reference="gkx-hQ-358"/>
+                    <include reference="hmv-uB-76F"/>
+                    <exclude reference="tmz-f5-q3e"/>
+                    <include reference="yBl-fg-O0V"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="214" y="324"/>
+        </view>
+    </objects>
+</document>

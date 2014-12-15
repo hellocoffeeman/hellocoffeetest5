@@ -1,0 +1,30 @@
+//
+//  PrefixHeader.pch
+//  HelloCoffee
+//
+//  Created by Hello Coffee on 14/11/4.
+//  Copyright (c) 2014年 HelloCoffee. All rights reserved.
+//
+
+#ifndef HelloCoffee_PrefixHeader_pch
+#define HelloCoffee_PrefixHeader_pch
+#import "httpManager.h"
+#import "MobClick.h"   //友盟数据统计
+#define hello @"hellocoffee"
+//版本号
+#define myVersion [[UIDevice currentDevice].systemVersion floatValue]
+//当前屏幕的宽
+#define  s_width [[UIScreen mainScreen] bounds].size.width
+
+//当前屏幕的高
+#define  s_height [[UIScreen mainScreen] bounds].size.height
+//plist文件
+#define plistWay [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle]pathForResource:@"manyInfo" ofType:@"plist"]]
+//友盟数据统计
+#define UMAppKey @"54744819fd98c53305000063"
+
+// 应用默认 蓝色
+#define kBlueColor [UIColor colorWithRed:51.0/256.0 green:136.0/256.0 blue:255.0/256.0 alpha:1.0]
+
+
+#endif

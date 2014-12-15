@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderCoffeeViewController">
+            <connections>
+                <outlet property="mainCollectionView" destination="nQh-ce-Iio" id="7ej-2H-Mzf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PbG-3g-wBE">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.97049813851633215" blue="0.906221834505607" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="tZG-XX-g6U"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <state key="normal" title="下一步">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="tZG-XX-g6U"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="tZG-XX-g6U"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="nextStep:" destination="-1" eventType="touchUpInside" id="zhX-I3-448"/>
+                    </connections>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="nQh-ce-Iio">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="3" minimumInteritemSpacing="0.0" id="lAH-lb-InN">
+                        <size key="itemSize" width="400" height="370"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="PbG-3g-wBE" secondAttribute="trailing" id="5CU-SF-k02"/>
+                <constraint firstItem="nQh-ce-Iio" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="6Z8-9R-Xcz"/>
+                <constraint firstAttribute="trailing" secondItem="nQh-ce-Iio" secondAttribute="trailing" id="L46-wQ-qNk"/>
+                <constraint firstAttribute="bottom" secondItem="PbG-3g-wBE" secondAttribute="bottom" id="NMs-8e-4rb"/>
+                <constraint firstItem="nQh-ce-Iio" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ho5-Jk-ROL"/>
+                <constraint firstAttribute="bottom" secondItem="nQh-ce-Iio" secondAttribute="bottom" constant="49" id="lZv-yp-Apc"/>
+                <constraint firstItem="PbG-3g-wBE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pi5-HJ-zll"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="PbG-3g-wBE"/>
+                    <exclude reference="nQh-ce-Iio"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="5CU-SF-k02"/>
+                    <exclude reference="NMs-8e-4rb"/>
+                    <exclude reference="pi5-HJ-zll"/>
+                    <exclude reference="6Z8-9R-Xcz"/>
+                    <exclude reference="L46-wQ-qNk"/>
+                    <exclude reference="ho5-Jk-ROL"/>
+                    <exclude reference="lZv-yp-Apc"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="PbG-3g-wBE"/>
+                    <include reference="nQh-ce-Iio"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="5CU-SF-k02"/>
+                    <include reference="NMs-8e-4rb"/>
+                    <include reference="pi5-HJ-zll"/>
+                    <include reference="6Z8-9R-Xcz"/>
+                    <include reference="L46-wQ-qNk"/>
+                    <include reference="ho5-Jk-ROL"/>
+                    <include reference="lZv-yp-Apc"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="266" y="324"/>
+        </view>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="cgx-mp-Keh">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+        </collectionViewCell>
+    </objects>
+</document>
