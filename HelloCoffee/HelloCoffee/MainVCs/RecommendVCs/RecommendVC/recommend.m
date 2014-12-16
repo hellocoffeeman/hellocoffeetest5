@@ -130,6 +130,7 @@
     TableViewCell * cell =[tableView dequeueReusableCellWithIdentifier:@"TableViewCell"];
     if (!cell) {
         cell = [[[NSBundle mainBundle]loadNibNamed:@"TableViewCell" owner:self options:nil]lastObject];
+        
     }
     chakanCount = [cell.chakanCountLabel.text integerValue];
     [cell reloadData];
@@ -137,6 +138,32 @@
 //    cell.headimageView.image =[UIImage imageNamed:@"zhuti2"];
     cell.iconImg.image = [UIImage imageNamed:[NSString stringWithFormat:@"%d.png",200+2]];
     cell.headimageView.image =[UIImage imageNamed:[NSString stringWithFormat:@"%ld.jpg",(long)indexPath.row+100]];
+//    cell.headimageView.image = [UIImage imageNamed:@"testPIC.png"];
+    if (s_height <= 568) {
+        cell.zuo.constant = 50;
+        cell.you.constant = 50;
+        cell.top.constant = 20;
+    }else if (s_height == 667){
+        cell.zuo.constant = 63;
+        cell.you.constant = 63;
+        cell.top.constant = 23;
+    }else{
+        cell.zuo.constant = 73;
+        cell.you.constant = 73;
+        cell.top.constant = 26;
+    }
+    [cell setNeedsUpdateConstraints];
+//    [NSLayoutConstraint constraintWithItem:cell.zanCountLabel
+//                                 attribute:NSLayoutAttributeRight
+//                                 relatedBy:(NSLayoutRelationEqual)
+//                                    toItem:cell.fengexian2
+//                                 attribute:NSLayoutAttributeLeft multiplier:1.0
+//                                  constant:tt];
+   
+    
+
+   
+    
     NSLog(@"x:%f \n y:%f",cell.headimageView.frame.size.width,cell.headimageView.frame.size.height);
     return cell;
 }

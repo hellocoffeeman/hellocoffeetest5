@@ -92,7 +92,18 @@
 		F49666EC1A1F30FC005960C3 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F49666BA1A1F30FC005960C3 /* 8.jpg */; };
 		F49666ED1A1F30FC005960C3 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F49666BB1A1F30FC005960C3 /* 9.jpg */; };
 		F49907AB1A089DF800B31101 /* manyInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = F49907AA1A089DF800B31101 /* manyInfo.plist */; };
+		F4A5417A1A3FC04D00EEE237 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4A541791A3FC04D00EEE237 /* TableViewCell.xib */; };
 		F4A554FD1A2DB7B500101676 /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4A554FC1A2DB7B500101676 /* libMobClickLibrary.a */; };
+		F4B7C6B71A3FE7470004169E /* testPIC.png in Resources */ = {isa = PBXBuildFile; fileRef = F4B7C6B61A3FE7470004169E /* testPIC.png */; };
+		F4B7C6C21A40032D0004169E /* AmericanCoffee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4B7C6B81A40032D0004169E /* AmericanCoffee.jpg */; };
+		F4B7C6C41A40032D0004169E /* Coffee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4B7C6BA1A40032D0004169E /* Coffee.jpg */; };
+		F4B7C6C61A40032D0004169E /* DoubleEspresso.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4B7C6BC1A40032D0004169E /* DoubleEspresso.jpg */; };
+		F4B7C6C71A40032D0004169E /* Espresso.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4B7C6BD1A40032D0004169E /* Espresso.jpg */; };
+		F4B7C6C81A40032D0004169E /* HazelnutCoffee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4B7C6BE1A40032D0004169E /* HazelnutCoffee.jpg */; };
+		F4B7C6C91A40032D0004169E /* IrishCoffee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4B7C6BF1A40032D0004169E /* IrishCoffee.jpg */; };
+		F4B7C6CD1A4005630004169E /* CoffeeLatte.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4B7C6CC1A4005630004169E /* CoffeeLatte.jpg */; };
+		F4B7C6CF1A40057D0004169E /* MochaCoffee.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4B7C6CE1A40057D0004169E /* MochaCoffee.jpg */; };
+		F4B7C6D11A4006050004169E /* Cappuccino.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4B7C6D01A4006050004169E /* Cappuccino.jpg */; };
 		F4BDBB001A282AE9007C291A /* geren@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4BDBAFD1A282AE9007C291A /* geren@2x.png */; };
 		F4BDBB011A282AE9007C291A /* kafeiguan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4BDBAFE1A282AE9007C291A /* kafeiguan@2x.png */; };
 		F4BDBB021A282AE9007C291A /* kafeiguan2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4BDBAFF1A282AE9007C291A /* kafeiguan2@2x.png */; };
@@ -200,16 +211,6 @@
 		FA4B83F21A359FF100C4EE93 /* weixinzhifu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA4B83EF1A359FF100C4EE93 /* weixinzhifu@2x.png */; };
 		FA4B83F31A359FF100C4EE93 /* zhifubaozhifu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA4B83F01A359FF100C4EE93 /* zhifubaozhifu@2x.png */; };
 		FA4B83F61A35A59200C4EE93 /* ConfirmPaymentAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA4B83F51A35A59200C4EE93 /* ConfirmPaymentAlertView.m */; };
-		FA5522A51A3EE92D00D2185C /* CoffeeLatte.png in Resources */ = {isa = PBXBuildFile; fileRef = FA55229B1A3EE92D00D2185C /* CoffeeLatte.png */; };
-		FA5522A61A3EE92D00D2185C /* AmericanCoffee.png in Resources */ = {isa = PBXBuildFile; fileRef = FA55229C1A3EE92D00D2185C /* AmericanCoffee.png */; };
-		FA5522A71A3EE92D00D2185C /* Espresso.png in Resources */ = {isa = PBXBuildFile; fileRef = FA55229D1A3EE92D00D2185C /* Espresso.png */; };
-		FA5522A81A3EE92D00D2185C /* IrishCoffee.png in Resources */ = {isa = PBXBuildFile; fileRef = FA55229E1A3EE92D00D2185C /* IrishCoffee.png */; };
-		FA5522A91A3EE92D00D2185C /* Cappuccino.png in Resources */ = {isa = PBXBuildFile; fileRef = FA55229F1A3EE92D00D2185C /* Cappuccino.png */; };
-		FA5522AA1A3EE92D00D2185C /* DoubleEspresso.png in Resources */ = {isa = PBXBuildFile; fileRef = FA5522A01A3EE92D00D2185C /* DoubleEspresso.png */; };
-		FA5522AB1A3EE92D00D2185C /* MochaCoffee.png in Resources */ = {isa = PBXBuildFile; fileRef = FA5522A11A3EE92D00D2185C /* MochaCoffee.png */; };
-		FA5522AC1A3EE92D00D2185C /* MochaCoffee1.png in Resources */ = {isa = PBXBuildFile; fileRef = FA5522A21A3EE92D00D2185C /* MochaCoffee1.png */; };
-		FA5522AD1A3EE92D00D2185C /* Coffee.png in Resources */ = {isa = PBXBuildFile; fileRef = FA5522A31A3EE92D00D2185C /* Coffee.png */; };
-		FA5522AE1A3EE92D00D2185C /* HazelnutCoffee.png in Resources */ = {isa = PBXBuildFile; fileRef = FA5522A41A3EE92D00D2185C /* HazelnutCoffee.png */; };
 		FA5A73901A22C0D300B04EA0 /* ReserveBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5A738E1A22C0D300B04EA0 /* ReserveBoxViewController.m */; };
 		FA5A73911A22C0D300B04EA0 /* ReserveBoxViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5A738F1A22C0D300B04EA0 /* ReserveBoxViewController.xib */; };
 		FA5A73951A2314BB00B04EA0 /* CoffeeInfoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5A73931A2314BB00B04EA0 /* CoffeeInfoCollectionViewCell.m */; };
@@ -325,7 +326,6 @@
 		FAB818DF1A2DC7D0003BE948 /* touxiang23@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB818D21A2DC7D0003BE948 /* touxiang23@2x.png */; };
 		FAB818E01A2DC7D0003BE948 /* tu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB818D31A2DC7D0003BE948 /* tu@2x.png */; };
 		FAB818E11A2DC7D0003BE948 /* tupianyinying@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAB818D41A2DC7D0003BE948 /* tupianyinying@2x.png */; };
-		FAB818E41A2DC8A9003BE948 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB818E31A2DC8A9003BE948 /* TableViewCell.xib */; };
 		FAE68BA41A30708700404E27 /* SeachTopicsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE68BA21A30708700404E27 /* SeachTopicsCell.m */; };
 		FAE68BA51A30708700404E27 /* SeachTopicsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE68BA31A30708700404E27 /* SeachTopicsCell.xib */; };
 /* End PBXBuildFile section */
@@ -442,7 +442,18 @@
 		F49666BA1A1F30FC005960C3 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
 		F49666BB1A1F30FC005960C3 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
 		F49907AA1A089DF800B31101 /* manyInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = manyInfo.plist; sourceTree = "<group>"; };
+		F4A541791A3FC04D00EEE237 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		F4A554FC1A2DB7B500101676 /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
+		F4B7C6B61A3FE7470004169E /* testPIC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = testPIC.png; sourceTree = "<group>"; };
+		F4B7C6B81A40032D0004169E /* AmericanCoffee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AmericanCoffee.jpg; sourceTree = "<group>"; };
+		F4B7C6BA1A40032D0004169E /* Coffee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Coffee.jpg; sourceTree = "<group>"; };
+		F4B7C6BC1A40032D0004169E /* DoubleEspresso.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DoubleEspresso.jpg; sourceTree = "<group>"; };
+		F4B7C6BD1A40032D0004169E /* Espresso.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Espresso.jpg; sourceTree = "<group>"; };
+		F4B7C6BE1A40032D0004169E /* HazelnutCoffee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = HazelnutCoffee.jpg; sourceTree = "<group>"; };
+		F4B7C6BF1A40032D0004169E /* IrishCoffee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IrishCoffee.jpg; sourceTree = "<group>"; };
+		F4B7C6CC1A4005630004169E /* CoffeeLatte.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CoffeeLatte.jpg; sourceTree = "<group>"; };
+		F4B7C6CE1A40057D0004169E /* MochaCoffee.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MochaCoffee.jpg; sourceTree = "<group>"; };
+		F4B7C6D01A4006050004169E /* Cappuccino.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cappuccino.jpg; sourceTree = "<group>"; };
 		F4BDBAFD1A282AE9007C291A /* geren@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "geren@2x.png"; sourceTree = "<group>"; };
 		F4BDBAFE1A282AE9007C291A /* kafeiguan@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kafeiguan@2x.png"; sourceTree = "<group>"; };
 		F4BDBAFF1A282AE9007C291A /* kafeiguan2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kafeiguan2@2x.png"; sourceTree = "<group>"; };
@@ -580,16 +591,6 @@
 		FA4B83F01A359FF100C4EE93 /* zhifubaozhifu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zhifubaozhifu@2x.png"; sourceTree = "<group>"; };
 		FA4B83F41A35A59200C4EE93 /* ConfirmPaymentAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmPaymentAlertView.h; sourceTree = "<group>"; };
 		FA4B83F51A35A59200C4EE93 /* ConfirmPaymentAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmPaymentAlertView.m; sourceTree = "<group>"; };
-		FA55229B1A3EE92D00D2185C /* CoffeeLatte.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CoffeeLatte.png; sourceTree = "<group>"; };
-		FA55229C1A3EE92D00D2185C /* AmericanCoffee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AmericanCoffee.png; sourceTree = "<group>"; };
-		FA55229D1A3EE92D00D2185C /* Espresso.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Espresso.png; sourceTree = "<group>"; };
-		FA55229E1A3EE92D00D2185C /* IrishCoffee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IrishCoffee.png; sourceTree = "<group>"; };
-		FA55229F1A3EE92D00D2185C /* Cappuccino.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cappuccino.png; sourceTree = "<group>"; };
-		FA5522A01A3EE92D00D2185C /* DoubleEspresso.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DoubleEspresso.png; sourceTree = "<group>"; };
-		FA5522A11A3EE92D00D2185C /* MochaCoffee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MochaCoffee.png; sourceTree = "<group>"; };
-		FA5522A21A3EE92D00D2185C /* MochaCoffee1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MochaCoffee1.png; sourceTree = "<group>"; };
-		FA5522A31A3EE92D00D2185C /* Coffee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Coffee.png; sourceTree = "<group>"; };
-		FA5522A41A3EE92D00D2185C /* HazelnutCoffee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HazelnutCoffee.png; sourceTree = "<group>"; };
 		FA5A738D1A22C0D300B04EA0 /* ReserveBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReserveBoxViewController.h; sourceTree = "<group>"; };
 		FA5A738E1A22C0D300B04EA0 /* ReserveBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReserveBoxViewController.m; sourceTree = "<group>"; };
 		FA5A738F1A22C0D300B04EA0 /* ReserveBoxViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReserveBoxViewController.xib; sourceTree = "<group>"; };
@@ -727,7 +728,6 @@
 		FAB818D21A2DC7D0003BE948 /* touxiang23@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "touxiang23@2x.png"; path = "HelloCoffee/Picture/Images/Change/touxiang23@2x.png"; sourceTree = SOURCE_ROOT; };
 		FAB818D31A2DC7D0003BE948 /* tu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tu@2x.png"; path = "HelloCoffee/Picture/Images/Change/tu@2x.png"; sourceTree = SOURCE_ROOT; };
 		FAB818D41A2DC7D0003BE948 /* tupianyinying@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tupianyinying@2x.png"; path = "HelloCoffee/Picture/Images/Change/tupianyinying@2x.png"; sourceTree = SOURCE_ROOT; };
-		FAB818E31A2DC8A9003BE948 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		FAE68BA11A30708700404E27 /* SeachTopicsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeachTopicsCell.h; sourceTree = "<group>"; };
 		FAE68BA21A30708700404E27 /* SeachTopicsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeachTopicsCell.m; sourceTree = "<group>"; };
 		FAE68BA31A30708700404E27 /* SeachTopicsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SeachTopicsCell.xib; sourceTree = "<group>"; };
@@ -951,6 +951,7 @@
 		F4FE035F1A3EE6D8004AF3F2 /* PIC */ = {
 			isa = PBXGroup;
 			children = (
+				F4B7C6B61A3FE7470004169E /* testPIC.png */,
 				F4FE03601A3EE6D8004AF3F2 /* 100.jpg */,
 				F4FE03611A3EE6D8004AF3F2 /* 101.jpg */,
 				F4FE03621A3EE6D8004AF3F2 /* 102.jpg */,
@@ -1180,16 +1181,15 @@
 		FA55229A1A3EE91D00D2185C /* CoffeePictures */ = {
 			isa = PBXGroup;
 			children = (
-				FA55229B1A3EE92D00D2185C /* CoffeeLatte.png */,
-				FA55229C1A3EE92D00D2185C /* AmericanCoffee.png */,
-				FA55229D1A3EE92D00D2185C /* Espresso.png */,
-				FA55229E1A3EE92D00D2185C /* IrishCoffee.png */,
-				FA55229F1A3EE92D00D2185C /* Cappuccino.png */,
-				FA5522A01A3EE92D00D2185C /* DoubleEspresso.png */,
-				FA5522A11A3EE92D00D2185C /* MochaCoffee.png */,
-				FA5522A21A3EE92D00D2185C /* MochaCoffee1.png */,
-				FA5522A31A3EE92D00D2185C /* Coffee.png */,
-				FA5522A41A3EE92D00D2185C /* HazelnutCoffee.png */,
+				F4B7C6B81A40032D0004169E /* AmericanCoffee.jpg */,
+				F4B7C6BA1A40032D0004169E /* Coffee.jpg */,
+				F4B7C6CC1A4005630004169E /* CoffeeLatte.jpg */,
+				F4B7C6D01A4006050004169E /* Cappuccino.jpg */,
+				F4B7C6BC1A40032D0004169E /* DoubleEspresso.jpg */,
+				F4B7C6BD1A40032D0004169E /* Espresso.jpg */,
+				F4B7C6BE1A40032D0004169E /* HazelnutCoffee.jpg */,
+				F4B7C6CE1A40057D0004169E /* MochaCoffee.jpg */,
+				F4B7C6BF1A40032D0004169E /* IrishCoffee.jpg */,
 			);
 			path = CoffeePictures;
 			sourceTree = "<group>";
@@ -1313,7 +1313,7 @@
 			children = (
 				96AAA6E51A2D94C000BF2433 /* TableViewCell.h */,
 				96AAA6E61A2D94C000BF2433 /* TableViewCell.m */,
-				FAB818E31A2DC8A9003BE948 /* TableViewCell.xib */,
+				F4A541791A3FC04D00EEE237 /* TableViewCell.xib */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -1678,7 +1678,6 @@
 				FA3693AA1A25C4B2000C036A /* fasong-no@2x.png in Resources */,
 				F49666D81A1F30FC005960C3 /* 34.jpg in Resources */,
 				FA42D5841A314AA10068DF6D /* jiuxianqiao@2x.png in Resources */,
-				FA5522AC1A3EE92D00D2185C /* MochaCoffee1.png in Resources */,
 				FA2F7FA31A1D89F800F47149 /* LICENSE in Resources */,
 				F4FE03751A3EE70A004AF3F2 /* 107.jpg in Resources */,
 				F413C6811A35B4FF005410F5 /* fanhui@2x.png in Resources */,
@@ -1690,6 +1689,7 @@
 				F49666D31A1F30FC005960C3 /* 3.jpg in Resources */,
 				FA2F7FA01A1D89F800F47149 /* grayArrow@2x.png in Resources */,
 				FAB818E01A2DC7D0003BE948 /* tu@2x.png in Resources */,
+				F4B7C6CF1A40057D0004169E /* MochaCoffee.jpg in Resources */,
 				FA42D5961A314AB20068DF6D /* jiudian@2x.png in Resources */,
 				FA42D57F1A314AA10068DF6D /* dongzhimen@2x.png in Resources */,
 				FA86C2091A1AFDA50093311A /* FirstIntroduceCell.xib in Resources */,
@@ -1725,7 +1725,6 @@
 				FA2F7F9E1A1D89F800F47149 /* blueArrow@2x.png in Resources */,
 				FA42D57A1A314AA10068DF6D /* chaoyanggongyuan@2x.png in Resources */,
 				FA86C2921A1B1BF60093311A /* dianpu-dizhi-kuang@2x.png in Resources */,
-				FA5522A51A3EE92D00D2185C /* CoffeeLatte.png in Resources */,
 				FA42D57D1A314AA10068DF6D /* dongdaqiao@2x.png in Resources */,
 				FA6C82791A1F0B44006B79A7 /* xuanzhongquan@2x.png in Resources */,
 				F4FE036A1A3EE6D9004AF3F2 /* 100.jpg in Resources */,
@@ -1734,7 +1733,6 @@
 				F4FE037A1A3EE97C004AF3F2 /* 201@2x.png in Resources */,
 				F49666C91A1F30FC005960C3 /* 20.jpg in Resources */,
 				FA42D5A01A314C190068DF6D /* 0.png in Resources */,
-				FA5522A91A3EE92D00D2185C /* Cappuccino.png in Resources */,
 				FAB818C11A2DC78B003BE948 /* tuijian-xuan@2x.png in Resources */,
 				F49666DD1A1F30FC005960C3 /* 39.jpg in Resources */,
 				FA42D5A41A314C190068DF6D /* 4.png in Resources */,
@@ -1744,6 +1742,8 @@
 				FA86C2881A1B1BF60093311A /* bianji-chakan-kuang@2x.png in Resources */,
 				FA86C2AA1A1B1BF60093311A /* shoujianzhou-xialaxian@2x.png in Resources */,
 				FA86C2A91A1B1BF60093311A /* shijianzhou-zi@2x.png in Resources */,
+				F4B7C6CD1A4005630004169E /* CoffeeLatte.jpg in Resources */,
+				F4B7C6C21A40032D0004169E /* AmericanCoffee.jpg in Resources */,
 				FA42D58D1A314AA10068DF6D /* zhongguancun@2x.png in Resources */,
 				F4FE037B1A3EE97C004AF3F2 /* 202@2x.png in Resources */,
 				F4BDBB001A282AE9007C291A /* geren@2x.png in Resources */,
@@ -1767,6 +1767,7 @@
 				F48FAAAC1A36AA8100F5CA5A /* SearchMainCell.xib in Resources */,
 				FA4B83F21A359FF100C4EE93 /* weixinzhifu@2x.png in Resources */,
 				F49666EA1A1F30FC005960C3 /* 6.jpg in Resources */,
+				F4B7C6C41A40032D0004169E /* Coffee.jpg in Resources */,
 				F49666D51A1F30FC005960C3 /* 31.jpg in Resources */,
 				F4BDBB011A282AE9007C291A /* kafeiguan@2x.png in Resources */,
 				FA86C28E1A1B1BF60093311A /* daohang@2x.png in Resources */,
@@ -1781,7 +1782,6 @@
 				FA42D5A11A314C190068DF6D /* 1.png in Resources */,
 				F49666E41A1F30FC005960C3 /* 45.jpg in Resources */,
 				FA86C1EA1A1AF2440093311A /* recommend.xib in Resources */,
-				FA5522AA1A3EE92D00D2185C /* DoubleEspresso.png in Resources */,
 				F43A37801A1DF17800C37CE9 /* MapViewController.xib in Resources */,
 				FAB818BD1A2DC78B003BE948 /* my.png in Resources */,
 				F49666D41A1F30FC005960C3 /* 30.jpg in Resources */,
@@ -1809,10 +1809,9 @@
 				F49666CE1A1F30FC005960C3 /* 25.jpg in Resources */,
 				FA42D5861A314AA10068DF6D /* wangjing@2x.png in Resources */,
 				FA47BEBC1A26C6540012EA86 /* xuandian@2x.png in Resources */,
-				FAB818E41A2DC8A9003BE948 /* TableViewCell.xib in Resources */,
-				FA5522AB1A3EE92D00D2185C /* MochaCoffee.png in Resources */,
 				FA42D5831A314AA10068DF6D /* jinrongjie@2x.png in Resources */,
 				FAB818D71A2DC7D0003BE948 /* chakan@2x.png in Resources */,
+				F4B7C6C81A40032D0004169E /* HazelnutCoffee.jpg in Resources */,
 				F49666BC1A1F30FC005960C3 /* 0.jpg in Resources */,
 				FA42D5971A314AB20068DF6D /* ketang@2x.png in Resources */,
 				FA86C2AC1A1B1BF60093311A /* woxianglaizuozuo-zi@2x.png in Resources */,
@@ -1833,22 +1832,22 @@
 				F49666C81A1F30FC005960C3 /* 2.jpg in Resources */,
 				FAB818D91A2DC7D0003BE948 /* dianzan@2x.png in Resources */,
 				F49666D21A1F30FC005960C3 /* 29.jpg in Resources */,
-				FA5522A81A3EE92D00D2185C /* IrishCoffee.png in Resources */,
 				FA86C1EC1A1AF2440093311A /* search.xib in Resources */,
 				F49666D01A1F30FC005960C3 /* 27.jpg in Resources */,
 				FA86C2A71A1B1BF60093311A /* shijianzhou-lashou@2x.png in Resources */,
+				F4B7C6D11A4006050004169E /* Cappuccino.jpg in Resources */,
 				FA86C29E1A1B1BF60093311A /* kenengganxingquderen-fengexian@2x.png in Resources */,
 				F48B10F11A31B75B00FE27D0 /* 40~60.png in Resources */,
 				F413C68B1A35B535005410F5 /* zhuti2@2x.png in Resources */,
 				F4FE036F1A3EE6D9004AF3F2 /* 105.jpg in Resources */,
 				FA86C2131A1AFE5B0093311A /* ThirdShopInfoCell.xib in Resources */,
+				F4B7C6B71A3FE7470004169E /* testPIC.png in Resources */,
 				FA33971F1A2426F4005F15E2 /* CheckOrderViewController.xib in Resources */,
 				FAB818BE1A2DC78B003BE948 /* recommend.png in Resources */,
 				F49666E31A1F30FC005960C3 /* 44.jpg in Resources */,
 				FA86C29A1A1B1BF60093311A /* dianpu-yingyeshijian-tubiao@2x.png in Resources */,
 				F49666E91A1F30FC005960C3 /* 5.jpg in Resources */,
 				FA47BEC01A2700100012EA86 /* qipao2@2x.png in Resources */,
-				FA5522A71A3EE92D00D2185C /* Espresso.png in Resources */,
 				F413C68A1A35B535005410F5 /* zhuti1@2x.png in Resources */,
 				F49666CB1A1F30FC005960C3 /* 22.jpg in Resources */,
 				FA47BEBB1A26C6540012EA86 /* xiayibu@2x.png in Resources */,
@@ -1857,6 +1856,7 @@
 				FAE68BA51A30708700404E27 /* SeachTopicsCell.xib in Resources */,
 				FAB818C71A2DC78B003BE948 /* xunmi-wei@2x.png in Resources */,
 				F49666D61A1F30FC005960C3 /* 32.jpg in Resources */,
+				F4B7C6C71A40032D0004169E /* Espresso.jpg in Resources */,
 				FA42D5991A314AB20068DF6D /* yinyue@2x.png in Resources */,
 				FA42D5621A314A810068DF6D /* juhuipaidui@2x.png in Resources */,
 				FA3693AD1A25C4B2000C036A /* xianchangcuidan@2x.png in Resources */,
@@ -1864,7 +1864,6 @@
 				FA86C1F91A1AF3480093311A /* personSelf.xib in Resources */,
 				F49666BF1A1F30FC005960C3 /* 11.jpg in Resources */,
 				FA4B83F31A359FF100C4EE93 /* zhifubaozhifu@2x.png in Resources */,
-				FA5522A61A3EE92D00D2185C /* AmericanCoffee.png in Resources */,
 				FA86C29F1A1B1BF60093311A /* kenengganxingquderen-touxiang1@2x.png in Resources */,
 				F4307FA81A085CBF000FEA2A /* LaunchScreen.xib in Resources */,
 				F48B10F31A31B75B00FE27D0 /* 80+@2x.png in Resources */,
@@ -1872,9 +1871,9 @@
 				FAB818BF1A2DC78B003BE948 /* search.png in Resources */,
 				F49666BE1A1F30FC005960C3 /* 10.jpg in Resources */,
 				F4FE03731A3EE6D9004AF3F2 /* 109.jpg in Resources */,
+				F4B7C6C91A40032D0004169E /* IrishCoffee.jpg in Resources */,
 				F49666C71A1F30FC005960C3 /* 19.jpg in Resources */,
 				FA86C1FE1A1AF4980093311A /* ShopDetailsViewController.xib in Resources */,
-				FA5522AE1A3EE92D00D2185C /* HazelnutCoffee.png in Resources */,
 				FA86C2A81A1B1BF60093311A /* shijianzhou-xian@2x.png in Resources */,
 				F49666EC1A1F30FC005960C3 /* 8.jpg in Resources */,
 				FA5A73911A22C0D300B04EA0 /* ReserveBoxViewController.xib in Resources */,
@@ -1883,6 +1882,7 @@
 				FA3693A91A25C4B2000C036A /* daojishi@2x.png in Resources */,
 				964534F11A2F1EE8001512D6 /* dilanshi@2x.png in Resources */,
 				F413C6851A35B4FF005410F5 /* shanchu@2x.png in Resources */,
+				F4A5417A1A3FC04D00EEE237 /* TableViewCell.xib in Resources */,
 				FA42D5871A314AA10068DF6D /* wudaokou@2x.png in Resources */,
 				F4307FBE1A085DA9000FEA2A /* ViewController.xib in Resources */,
 				F4FE036E1A3EE6D9004AF3F2 /* 104.jpg in Resources */,
@@ -1904,6 +1904,7 @@
 				FAB818C81A2DC78B003BE948 /* xunmi-xuan@2x.png in Resources */,
 				F49666DF1A1F30FC005960C3 /* 40.jpg in Resources */,
 				FA2F7FA11A1D89F800F47149 /* whiteArrow.png in Resources */,
+				F4B7C6C61A40032D0004169E /* DoubleEspresso.jpg in Resources */,
 				F4FE036D1A3EE6D9004AF3F2 /* 103.jpg in Resources */,
 				FA3693A81A25C4B2000C036A /* cuidanjian-no@2x.png in Resources */,
 				FA86C2A21A1B1BF60093311A /* kenengganxingquderen-touxiang4@2x.png in Resources */,
@@ -1925,7 +1926,6 @@
 				FA86C2561A1B1B7F0093311A /* tabbar.png in Resources */,
 				F49666DA1A1F30FC005960C3 /* 36.jpg in Resources */,
 				FA86C24F1A1B1B7F0093311A /* dandian_pic@2x.png in Resources */,
-				FA5522AD1A3EE92D00D2185C /* Coffee.png in Resources */,
 				FA86C2AD1A1B1BF60093311A /* woxianglaizuozuo@2x.png in Resources */,
 				F49666C61A1F30FC005960C3 /* 18.jpg in Resources */,
 				FA6C82771A1F0B44006B79A7 /* open@2x.png in Resources */,

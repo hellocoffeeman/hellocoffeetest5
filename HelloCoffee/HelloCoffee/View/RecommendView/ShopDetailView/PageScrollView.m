@@ -13,7 +13,7 @@
 @property (nonatomic, assign) CGSize size;
 @property (nonatomic, strong) NSMutableArray *imageArray;
 @property (nonatomic, strong) UIPageControl *pageControl;
-
+@property (nonatomic, assign) PageControlLocation pageControlLocation;
 @end
 
 @implementation PageScrollView
@@ -34,15 +34,15 @@
     self.scrollEnabled = YES;
     self.showsVerticalScrollIndicator = NO;
     self.showsHorizontalScrollIndicator = NO;
-    self.contentSize = CGSizeMake(s_width * (count + 2 ), self.size.height); // 前后个留出一张图片的大小
-    self.contentOffset = CGPointMake(s_width, 0);
+    self.contentSize = CGSizeMake(self.size.width * (count + 2 ), self.size.height); // 前后个留出一张图片的大小
+    self.contentOffset = CGPointMake(self.size.width, 0);
 //    self.delegate = delegate; // 滚动代理
     self.delegate = self;
     
     // 初始化 ImageView
     for (int i = 0; i < imageArray.count+2; i++) {
         
-        UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(s_width*i, 0, s_width, size.height)];
+        UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(self.size.width*i, 0, self.size.width, size.height)];
         imageView.userInteractionEnabled  = YES;
         [self addSubview:imageView];
         
@@ -73,15 +73,15 @@
     self.pageControl = [[UIPageControl alloc] init];
     
     self.pageControl.numberOfPages = numberOfPage;
-    self.pageControl.currentPageIndicatorTintColor = [UIColor blueColor];
+    self.pageControl.currentPageIndicatorTintColor = kBlueColor;
     self.pageControl.pageIndicatorTintColor = [UIColor whiteColor];
     
     switch (pageControlLocation) {
         case PageControlLocationRight:
-            self.pageControl.center = CGPointMake(s_width-40+self.contentOffset.x, self.bounds.size.height - 18);
+            self.pageControl.center = CGPointMake(self.size.width-40+self.contentOffset.x, self.bounds.size.height - 18);
             break;
         case PageControlLocationCenter:
-            self.pageControl.center = CGPointMake(s_width/2, self.bounds.size.height - 18);
+            self.pageControl.center = CGPointMake(self.size.width/2, self.bounds.size.height - 18);
             break;
     }
     [self addSubview:self.pageControl];
@@ -92,27 +92,34 @@
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
     
     // 已到最后一张，继续拖动
-    if( scrollView.contentOffset.x >= (scrollView.contentSize.width - s_width ) ){
+    if( scrollView.contentOffset.x >= (scrollView.contentSize.width - self.size.width ) ){
         
-        scrollView.contentOffset = CGPointMake(s_width, 0);
+        scrollView.contentOffset = CGPointMake(self.size.width, 0);
         
     }
     // 已到第一张，继续拖动
-    if (scrollView.contentOffset.x < s_width) {
+    if (scrollView.contentOffset.x < self.size.width) {
         
-        scrollView.contentOffset = CGPointMake((scrollView.contentSize.width -s_width*2), 0);
+        scrollView.contentOffset = CGPointMake((scrollView.contentSize.width -self.size.width*2), 0);
         
     }
     
     // Page Control
-    int currentPage = scrollView.contentOffset.x/s_width;
+    int currentPage = scrollView.contentOffset.x/self.size.width;
     self.pageControl.currentPage = currentPage-1;
     
 }
 
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-    self.pageControl.center = CGPointMake(s_width-40+scrollView.contentOffset.x, self.bounds.size.height - 18);
+    switch (self.pageControlLocation) {
+        case PageControlLocationRight:
+            self.pageControl.center = CGPointMake(self.size.width-40+self.contentOffset.x, self.bounds.size.height - 18);
+            break;
+        case PageControlLocationCenter:
+            self.pageControl.center = CGPointMake(self.size.width/2, self.bounds.size.height - 18);
+            break;
+    }
 }
 
 

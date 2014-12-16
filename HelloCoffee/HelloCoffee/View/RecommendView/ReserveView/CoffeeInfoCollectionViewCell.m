@@ -40,12 +40,12 @@
     CGFloat height = self.frame.size.height;
     
     
-    self.photoImageView.frame = CGRectMake(0, 0, s_width, 210);
-    self.coffeeNameLabel.frame = CGRectMake(40, 210 + 5, s_width - 80, 30); // 5 是Name与图片的间距
+    self.photoImageView.frame = CGRectMake(0, 0, s_width, s_width/1.875);
+    self.coffeeNameLabel.frame = CGRectMake(40, s_width/1.875 + 5, s_width - 80, 30); // 5 是Name与图片的间距
     
     // 计算 InfoLabel的高度
     CGFloat infoLabelHeight =  [self getCoffeeInfoLabelHeightWithText:self.coffeeInfoLabel.text];
-    self.coffeeInfoLabel.frame = CGRectMake(15, 210 + 35, width - 30, infoLabelHeight );
+    self.coffeeInfoLabel.frame = CGRectMake(15, s_width/1.875 + 35, width - 30, infoLabelHeight );
     
     self.coffeePriceLabel.frame = CGRectMake(50, height - 40, 60, 30);
     self.chooseCountImageView.frame = CGRectMake(width - 98 - 50, height - 40, 98, 30); // 与下方间距 10

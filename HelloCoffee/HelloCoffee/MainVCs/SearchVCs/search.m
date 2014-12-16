@@ -362,6 +362,7 @@
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
      NSArray *arr = @[@"zhuti1",@"zhuti2",@"tu",@"dianputupian"];
+//    NSArray *arr = @[@"testPIC.png",@"testPIC.png",@"testPIC.png",@"testPIC.png"];
     NSArray *arr1 = @[@"主题",@"商区",@"情景",@"价位"];
     if (tableView ==_table) {
         if (indexPath.row == 0) {

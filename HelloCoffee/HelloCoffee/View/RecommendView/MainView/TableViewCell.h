@@ -15,6 +15,12 @@
 @property (weak, nonatomic) IBOutlet UIButton *zanButton;
 @property (weak, nonatomic) IBOutlet UIImageView *iconImg;
 @property (weak, nonatomic) IBOutlet UILabel *chakanCountLabel;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *zuo;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *you;
+@property (weak, nonatomic) IBOutlet UIImageView *fengexian2;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *top;
+
+
 
 
 -(void)actionForIconImg:(UIImageView *)iconImg andContentView:(UIViewController *)vc;

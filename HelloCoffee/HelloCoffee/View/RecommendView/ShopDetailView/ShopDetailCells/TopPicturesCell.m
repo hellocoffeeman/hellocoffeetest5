@@ -13,8 +13,8 @@
 // 为滚动试图添加点击方法
 -(void) setScrollViewDelegate:(id<UIScrollViewDelegate>)delegate imageArray:(NSMutableArray *)imageArray target:(id)target scrollViewAction:(SEL)scrollViewAction
 {
-    self.pageScrollView.frame = self.frame;
-    [self.pageScrollView setScrollViewSize:self.frame.size delegate:delegate imageArray:imageArray showPageControl:YES withPageControlLocation:PageControlLocationRight];
+    self.pageScrollView.frame = CGRectMake(0, 0, s_width, s_width/1.875);
+    [self.pageScrollView setScrollViewSize:CGSizeMake(s_width, s_width/1.875) delegate:delegate imageArray:imageArray showPageControl:YES withPageControlLocation:PageControlLocationRight];
     
     
     // 点击图片

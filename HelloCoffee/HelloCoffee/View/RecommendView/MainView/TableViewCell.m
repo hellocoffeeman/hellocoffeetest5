@@ -14,6 +14,7 @@
     BOOL _isSelected;
     UIViewController * myVC;
     
+
 }
 -(void)dealloc
 {
@@ -22,8 +23,7 @@
 - (void)awakeFromNib {
     // Initialization code
     [self.zanButton addTarget:self action:@selector(onClick:) forControlEvents:UIControlEventTouchUpInside];
-    
-}
+   }
 
 -(void)onClick:(UIButton *)button
 {

@@ -47,17 +47,17 @@
     self.coffeeNameArray = @[@"经典咖啡",@"拿铁",@"美式咖啡",@"摩卡咖啡",@"意式浓缩咖啡",@"卡布奇诺",@"榛子咖啡",@"爱尔兰"];
     self.coffeeInfoArray = @[@"其咖啡杯是一种方便于烤杯的耐热杯。烤杯的方法可以去除烈酒中的酒精，让酒香与咖啡更能够直接的调和。",@"爱尔兰咖啡（Irish Coffee）是一种既像酒又像咖啡的咖啡，原料是威士忌加咖啡豆，特殊的咖啡杯，特殊的煮法，认真而执着，古老而简朴。",@"特殊的咖啡杯，特殊的煮法，认真而执着，古老而简朴。 ",@"一种既像酒又像咖啡的咖啡，原料是威士忌加咖啡豆，特殊的咖啡杯，特殊的煮法，认真而执着，古老而简朴。其咖啡杯是一种方便于烤杯的耐热杯。烤杯的方法可以去除烈酒中的酒精，让酒香与咖啡更能够直接的调和。一种既像酒又像咖啡的咖啡，原料是威士忌加咖啡豆，特殊的咖啡杯，特殊的煮法，认真而执着，古老而简朴。一种既像酒又像咖啡的咖啡，原料是威士忌加咖啡豆，特殊的咖啡杯，特殊的煮法，认真而执着，古老而简朴。",@"一种既像酒又像咖啡的咖啡，原料是威士忌加咖啡豆，特殊的咖啡杯，特殊的煮法，认真而执着，古老而简朴。其咖啡杯是一种方便于烤杯的耐热杯。",@"烤杯的方法可以去除烈酒中的酒精，让酒香与咖啡更能够直接的调和。",@"一种既像酒又像咖啡的咖啡，原料是威士忌加咖啡豆，特殊的咖啡杯，特殊的煮法，认真而执着，古老而简朴。其咖啡杯是一种方便于烤杯的耐热杯。烤杯的方法可以去除烈酒中的酒精，让酒香与咖啡更能够直接的调和。",@"爱尔兰咖啡（Irish Coffee）"];
     self.coffeePriceArray = @[@"28",@"38",@"48",@"58",@"68",@"78",@"88",@"98"];
-<<<<<<< .mine
+
     
 //    self.coffeePicturesArray = @[[UIImage imageNamed:@"Coffee"],[UIImage imageNamed:@"CoffeeLatte"],[UIImage imageNamed:@"AmericanCoffee"],[UIImage imageNamed:@"MochaCoffee"],[UIImage imageNamed:@"Espresso"],[UIImage imageNamed:@"Cappuccino"],[UIImage imageNamed:@"HazelnutCoffee"],[UIImage imageNamed:@"IrishCoffee"]];
     
-     self.coffeePicturesArray = @[@"100.jpg",@"101.jpg",@"102.jpg",@"103.jpg",@"104.jpg",@"105.jpg",@"106.jpg",@"107.jpg",@"108.jpg",@"109.jpg"];
+//     self.coffeePicturesArray = @[@"100.jpg",@"101.jpg",@"102.jpg",@"103.jpg",@"104.jpg",@"105.jpg",@"106.jpg",@"107.jpg",@"108.jpg",@"109.jpg"];
     
 //self.coffeePicturesArray = @[@"Coffee",@"CoffeeLatte",@"AmericanCoffee",@"MochaCoffee",@"Espresso",@"Cappuccino",@"HazelnutCoffee",@"IrishCoffee"];
-=======
-    self.coffeePicturesArray = @[[UIImage imageNamed:@"Coffee"],[UIImage imageNamed:@"CoffeeLatte"],[UIImage imageNamed:@"AmericanCoffee"],[UIImage imageNamed:@"MochaCoffee"],[UIImage imageNamed:@"Espresso"],[UIImage imageNamed:@"Cappuccino"],[UIImage
-                                                                                                                                                                                                                                                    imageNamed:@"HazelnutCoffee"],[UIImage imageNamed:@"IrishCoffee"]];
->>>>>>> .r312
+
+    self.coffeePicturesArray = @[[UIImage imageNamed:@"Coffee.jpg"],[UIImage imageNamed:@"CoffeeLatte.jpg"],[UIImage imageNamed:@"AmericanCoffee.jpg"],[UIImage imageNamed:@"MochaCoffee.jpg"],[UIImage imageNamed:@"Espresso.jpg"],[UIImage imageNamed:@"Cappuccino.jpg"],[UIImage
+                                                                                                                                                                                                                                                    imageNamed:@"HazelnutCoffee.jpg"],[UIImage imageNamed:@"IrishCoffee.jpg"]];
+
 //    self.orderCountArray = [NSMutableArray arrayWithObjects:@"0",@"0",@"0",@"0",@"0",@"0",@"0",@"0", nil];
     self.orderCountArray = [NSMutableArray arrayWithObjects:@"1",@"1",@"1",@"1",@"1",@"1",@"1",@"1", nil];
 
@@ -155,7 +155,7 @@
     NSString *text = self.coffeeInfoArray[indexPath.row];
     CGFloat height = [self getCoffeeInfoLabelHeightWithText:text];
     
-    return CGSizeMake(s_width, height + 210 + 35 + 30 + 10);
+    return CGSizeMake(s_width, height + s_width/1.875 + 35 + 30 + 10);
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -165,8 +165,9 @@
     
     // 填充内容
     cell.indexPath = indexPath;
-    cell.photoImageView.image =[UIImage imageNamed:[NSString stringWithFormat:@"%@",self.coffeePicturesArray[indexPath.row]]];
-//    cell.photoImageView.image = self.coffeePicturesArray[indexPath.row];
+//    cell.photoImageView.image =[UIImage imageNamed:@"testPIC.png"];
+//    cell.photoImageView.image =[UIImage imageNamed:[NSString stringWithFormat:@"%@",self.coffeePicturesArray[indexPath.row]]];
+    cell.photoImageView.image = self.coffeePicturesArray[indexPath.row];
 
     [cell setInformationWithCoffeeName:self.coffeeNameArray[indexPath.row] coffeePrice:[NSString stringWithFormat:@"￥ %@",self.coffeePriceArray[indexPath.row]] orderCount:self.orderCountArray[indexPath.row] coffeeInfo:[self.coffeeInfoArray objectAtIndex:indexPath.row]]; // coffee 名字、价格、数量、介绍
     [cell addTarget:self withAddButtonAction:@selector(orderCoffeeAddCount:) subtractButtonAction:@selector(orderCoffeeSubtractCount:)]; // count action

@@ -194,7 +194,7 @@
         
         switch (indexPath.row) {
             case 0:
-                height = 160;
+                height = s_width/1.875;
                 break;
             case 1:
 //                height = 360;
