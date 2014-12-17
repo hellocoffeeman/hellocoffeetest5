@@ -31,10 +31,10 @@
     NSLog(@"cell_w = %g ; cell_h = %g ",s_width,s_height);
     
     // 昵称 View [ h:28 ] [徽章紧跟在文字后]
-    self.nickNameView.frame = CGRectMake(30, 8, s_width-80-(30*2), 28);
+    self.nickNameView.frame = CGRectMake(30, 8, s_width-95-(30*2), 28);
     // 昵称 Label
-    CGSize nickNameSize = [self getNewSizeOfRectWithText:self.nickNamelabel.text limitSize:CGSizeMake(s_width-80-(30*2)-20, 28) fontSize:17.0];
-    self.nickNamelabel.frame = CGRectMake(((s_width-80-30*2)/2 - nickNameSize.width/2), 0, nickNameSize.width, nickNameSize.height);
+    CGSize nickNameSize = [self getNewSizeOfRectWithText:self.nickNamelabel.text limitSize:CGSizeMake(s_width-95-(30*2)-20, 28) fontSize:17.0];
+    self.nickNamelabel.frame = CGRectMake(((s_width-95-30*2)/2 - nickNameSize.width/2), 0, nickNameSize.width, nickNameSize.height);
     // 徽章 Img 14*16
     self.badgeImageView.frame = CGRectMake((s_width-80-30*2)/2 + nickNameSize.width/2 + 4, 6, 14, 16);
     
