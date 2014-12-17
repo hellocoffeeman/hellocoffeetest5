@@ -43,16 +43,20 @@
     // 判断显示类型
     switch (self.type) {
         case WantSight:
-            [self makeToolBar:@"情景"];
+//            [self makeToolBar:@"情景"];
+            [self makeNavWithTitleLabel:@"主题"];
             break;
         case WantType:
-            [self makeToolBar:@"商圈"];
+//            [self makeToolBar:@"商圈"];
+            [self makeNavWithTitleLabel:@"商圈"];
             break;
         case WantActivity:
-            [self makeToolBar:@"活动"];
+//            [self makeToolBar:@"活动"];
+            [self makeNavWithTitleLabel:@"情景"];
             break;
         case WantPrise:
-            [self makeToolBar:@"单价"];
+//            [self makeToolBar:@"单价"];
+            [self makeNavWithTitleLabel:@"单价"];
             break;
         default:
             break;

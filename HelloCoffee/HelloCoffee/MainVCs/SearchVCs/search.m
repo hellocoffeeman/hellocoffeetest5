@@ -63,14 +63,18 @@
     self.view.backgroundColor = [UIColor colorWithRed:(241.0/255.0) green:(239.0/256.0) blue:(240.0/256.0) alpha:1.0];
 //搜索条
     _searchImg = [[UIImageView alloc]initWithFrame:CGRectMake(12, 8, s_width-12-78, 28)];
-    _searchImg.image = [UIImage imageNamed:@"sousuolan"];
+    _searchImg.image = [UIImage imageNamed:@"kuang"];
     _searchImg.userInteractionEnabled = YES;
     [self.topView addSubview:_searchImg];
+    
+    UIImageView *imgSouSuo = [[UIImageView alloc]initWithFrame:CGRectMake(12, 6, 22, 17)];
+    imgSouSuo.image = [UIImage imageNamed:@"sousuo"];
+    [_searchImg addSubview:imgSouSuo];
 //  textField相关
     _textField = [[UITextField alloc]initWithFrame:CGRectMake(45, 1, _searchImg.frame.size.width-41, 27)];
    [_textField addTarget:self action:@selector(textFieldDidChange:) forControlEvents:UIControlEventEditingChanged];
     [_searchImg addSubview:_textField];
-    _textField.placeholder = @"请输入关键字";
+    _textField.placeholder = @"请输入您要找的店名";
     _textField.keyboardType =UIKeyboardTypeWebSearch;
     _textField.delegate = self;
     UIImageView *ima = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 25, 25)];
@@ -300,7 +304,7 @@
 
 -(void)textFieldDidBeginEditing:(UITextField *)textField
 {
-    _searchImg.image = [UIImage imageNamed:@"sousuotiao2.png"];
+//    _searchImg.image = [UIImage imageNamed:@"sousuotiao2.png"];
     _searchImg.frame = CGRectMake(12, 8, s_width-12-52, 28);
     self.searchBtn.selected = YES;
     _searchTableView.hidden = NO;
@@ -308,7 +312,7 @@
 
 -(void)textFieldDidEndEditing:(UITextField *)textField
 {
-    _searchImg.image = [UIImage imageNamed:@"sousuolan"];
+//    _searchImg.image = [UIImage imageNamed:@"sousuolan"];
     _searchImg.frame = CGRectMake(12, 8, s_width-12-78, 28);
     self.searchBtn.selected = NO;
 

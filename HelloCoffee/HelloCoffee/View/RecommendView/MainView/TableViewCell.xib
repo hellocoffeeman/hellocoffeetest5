@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -286,6 +287,19 @@
                         <exclude reference="3Si-O5-9ak"/>
                     </mask>
                     <mask key="constraints">
+                        <exclude reference="Nb7-YY-8Lw"/>
+                        <exclude reference="WWe-mg-pcg"/>
+                        <exclude reference="FFY-gm-ubZ"/>
+                        <exclude reference="glS-XP-YFG"/>
+                        <exclude reference="7wi-rf-UWW"/>
+                        <exclude reference="Nse-YI-Jlh"/>
+                        <exclude reference="Q6B-qj-z71"/>
+                        <exclude reference="YFJ-aJ-2Ou"/>
+                        <exclude reference="c7G-Y8-80S"/>
+                        <exclude reference="p7g-sw-VEu"/>
+                        <exclude reference="Umo-OL-e1q"/>
+                        <exclude reference="nzN-lE-cu2"/>
+                        <exclude reference="MJU-Z1-ouq"/>
                         <exclude reference="7sn-z6-0cU"/>
                         <exclude reference="k1S-2y-aJd"/>
                         <exclude reference="m2N-kI-F6M"/>
@@ -305,22 +319,12 @@
                         <exclude reference="Ydg-4Z-jt6"/>
                         <exclude reference="p3z-4u-n5L"/>
                         <exclude reference="z2s-SA-PXu"/>
-                        <exclude reference="FFY-gm-ubZ"/>
-                        <exclude reference="glS-XP-YFG"/>
                         <exclude reference="2Xh-DE-lHy"/>
                         <exclude reference="XUH-lL-ZxW"/>
                         <exclude reference="YF0-Ue-KeW"/>
                         <exclude reference="bZu-tu-MF0"/>
                         <exclude reference="fEd-cE-51U"/>
                         <exclude reference="mh6-Zr-y7w"/>
-                        <exclude reference="Umo-OL-e1q"/>
-                        <exclude reference="nzN-lE-cu2"/>
-                        <exclude reference="7wi-rf-UWW"/>
-                        <exclude reference="Nse-YI-Jlh"/>
-                        <exclude reference="Q6B-qj-z71"/>
-                        <exclude reference="YFJ-aJ-2Ou"/>
-                        <exclude reference="c7G-Y8-80S"/>
-                        <exclude reference="p7g-sw-VEu"/>
                         <exclude reference="1G2-4W-1RT"/>
                         <exclude reference="46K-SO-EMd"/>
                         <exclude reference="83Q-Oo-r5c"/>
@@ -330,9 +334,6 @@
                         <exclude reference="FzK-xW-mQe"/>
                         <exclude reference="SSI-zz-F9b"/>
                         <exclude reference="m0f-fV-eM1"/>
-                        <exclude reference="MJU-Z1-ouq"/>
-                        <exclude reference="Nb7-YY-8Lw"/>
-                        <exclude reference="WWe-mg-pcg"/>
                         <exclude reference="7I3-pa-4MA"/>
                         <exclude reference="F8E-Rn-nKi"/>
                         <exclude reference="cAb-eZ-QE1"/>
@@ -347,6 +348,19 @@
                         <include reference="3Si-O5-9ak"/>
                     </mask>
                     <mask key="constraints">
+                        <include reference="Nb7-YY-8Lw"/>
+                        <include reference="WWe-mg-pcg"/>
+                        <exclude reference="FFY-gm-ubZ"/>
+                        <include reference="glS-XP-YFG"/>
+                        <include reference="7wi-rf-UWW"/>
+                        <include reference="Nse-YI-Jlh"/>
+                        <include reference="Q6B-qj-z71"/>
+                        <exclude reference="YFJ-aJ-2Ou"/>
+                        <include reference="c7G-Y8-80S"/>
+                        <include reference="p7g-sw-VEu"/>
+                        <include reference="Umo-OL-e1q"/>
+                        <include reference="nzN-lE-cu2"/>
+                        <include reference="MJU-Z1-ouq"/>
                         <include reference="7sn-z6-0cU"/>
                         <include reference="k1S-2y-aJd"/>
                         <include reference="m2N-kI-F6M"/>
@@ -366,22 +380,12 @@
                         <include reference="Ydg-4Z-jt6"/>
                         <include reference="p3z-4u-n5L"/>
                         <include reference="z2s-SA-PXu"/>
-                        <exclude reference="FFY-gm-ubZ"/>
-                        <include reference="glS-XP-YFG"/>
                         <include reference="2Xh-DE-lHy"/>
                         <include reference="XUH-lL-ZxW"/>
                         <include reference="YF0-Ue-KeW"/>
                         <include reference="bZu-tu-MF0"/>
                         <include reference="fEd-cE-51U"/>
                         <exclude reference="mh6-Zr-y7w"/>
-                        <include reference="Umo-OL-e1q"/>
-                        <include reference="nzN-lE-cu2"/>
-                        <include reference="7wi-rf-UWW"/>
-                        <include reference="Nse-YI-Jlh"/>
-                        <include reference="Q6B-qj-z71"/>
-                        <exclude reference="YFJ-aJ-2Ou"/>
-                        <include reference="c7G-Y8-80S"/>
-                        <include reference="p7g-sw-VEu"/>
                         <include reference="1G2-4W-1RT"/>
                         <include reference="46K-SO-EMd"/>
                         <exclude reference="83Q-Oo-r5c"/>
@@ -391,9 +395,6 @@
                         <include reference="FzK-xW-mQe"/>
                         <include reference="SSI-zz-F9b"/>
                         <include reference="m0f-fV-eM1"/>
-                        <include reference="MJU-Z1-ouq"/>
-                        <include reference="Nb7-YY-8Lw"/>
-                        <include reference="WWe-mg-pcg"/>
                         <include reference="7I3-pa-4MA"/>
                         <include reference="F8E-Rn-nKi"/>
                         <include reference="cAb-eZ-QE1"/>

@@ -48,7 +48,7 @@
     UINavigationController *personSelfNav = [[UINavigationController alloc]initWithRootViewController:personSelfVC];
     
 //图片自动渲染
-    if (myVersion >=7.0){
+    if (iosVersion >=7.0){
 //        IOS7以上版本
     //
     recommendNav.tabBarItem.image = [[UIImage imageNamed:@"un_recommend"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];

@@ -12,7 +12,7 @@
 #import "MobClick.h"   //友盟数据统计
 #define hello @"hellocoffee"
 //版本号
-#define myVersion [[UIDevice currentDevice].systemVersion floatValue]
+#define iosVersion [[UIDevice currentDevice].systemVersion floatValue]
 //当前屏幕的宽
 #define  s_width [[UIScreen mainScreen] bounds].size.width
 

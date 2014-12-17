@@ -79,6 +79,8 @@
     
     self.window.rootViewController = tabbar;
 */
+    
+        
     NSMutableArray * viewControllers = [NSMutableArray array];
     NSArray * VCArray =@[@"recommend",@"search",@"personSelf"];
     for (NSString * className in VCArray) {

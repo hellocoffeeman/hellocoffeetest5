@@ -9,8 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-//test111
-//12.16 16：33
+//dsajkdask
 @property (strong, nonatomic) UIWindow *window;
 
 @end

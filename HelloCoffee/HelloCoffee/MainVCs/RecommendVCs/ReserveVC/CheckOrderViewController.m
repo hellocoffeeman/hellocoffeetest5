@@ -68,13 +68,13 @@
 //    [self.navigationController.navigationBar setTintColor:[UIColor blackColor]];
     
     self.navigationController.navigationBarHidden = YES;
-    [self makeToolBar:@"我想来坐坐"]; // 需要 黑的Title
-
+//    [self makeToolBar:@"我想来坐坐"]; // 需要 黑的Title
+    [self makeNavWithTitleLabel:@"我想来坐坐"];
     
     // 设置 返回键 Title
-    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init];
-    self.navigationItem.backBarButtonItem = backItem;
-    backItem.title = @" ";
+//    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] init];
+//    self.navigationItem.backBarButtonItem = backItem;
+//    backItem.title = @" ";
     
     self.dateHandel = [ReserveDateHandel shareReserveDatehandel];
     
@@ -155,10 +155,10 @@
     self.chooseTimeLabel.frame = CGRectMake(frame_width - 65, 45, 65, 30);
     
     // (3) 修改 TotlePriceLabel / Button 位置
-    self.totlePriceLabel.frame = CGRectMake(s_width - 200 - 50, s_height - 65 - 30 - 10, 200, 30);
-    self.sendOrderButton.frame = CGRectMake(45, s_height - 15 - 50, 100, 50);
-    self.hastenOrderButton.frame = CGRectMake(s_width - 100 - 45, s_height - 15 - 50, 100, 50);
-
+    self.totlePriceLabel.frame = CGRectMake(s_width - 200 - 50, s_height - 60 - 30 - 10, 200, 30);
+    self.sendOrderButton.frame = CGRectMake(45, s_height - 20 - 40, 100, 40);
+    self.hastenOrderButton.frame = CGRectMake(s_width - 100 - 45, s_height - 20 - 40, 100, 40);
+    
 }
 
 -(void)setChangeReserveInfoView
@@ -221,18 +221,13 @@
     // 操作
     self.showReserveInfoView.userInteractionEnabled = canChange;
     [self.orderCoffeeTableView reloadData];
-    self.sendOrderButton.enabled = canChange;
-    self.hastenOrderButton.enabled = canChange;
+    self.sendOrderButton.userInteractionEnabled = canChange;
+    self.hastenOrderButton.userInteractionEnabled = canChange;
     
-    // 设置Button的背景图
-    if (canChange) {
-        [self.sendOrderButton setBackgroundImage:[UIImage imageNamed:@"fasong"] forState:UIControlStateNormal];
-        [self.hastenOrderButton setBackgroundImage:[UIImage imageNamed:@"cuidanjian"] forState:UIControlStateNormal];
-    }else{
-        [self.sendOrderButton setBackgroundImage:[UIImage imageNamed:@"fasong-no"] forState:UIControlStateNormal];
-        [self.hastenOrderButton setBackgroundImage:[UIImage imageNamed:@"cuidanjian-no"] forState:UIControlStateNormal];
-    }
-    
+    // Button selected 与 Normal 状态下图片不同
+    self.sendOrderButton.selected = !canChange;
+    self.hastenOrderButton.selected = !canChange;
+
 }
 
 #pragma mark - 更改预定信息  人数、日期、时间-

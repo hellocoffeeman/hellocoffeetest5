@@ -10,7 +10,7 @@
 		964534F11A2F1EE8001512D6 /* dilanshi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 964534F01A2F1EE8001512D6 /* dilanshi@2x.png */; };
 		96AAA6A81A2D8C8900BF2433 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AAA6A71A2D8C8900BF2433 /* AppDelegate.m */; };
 		96AAA6E81A2D94C000BF2433 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96AAA6E61A2D94C000BF2433 /* TableViewCell.m */; };
-		F413C6811A35B4FF005410F5 /* fanhui@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F413C67A1A35B4FF005410F5 /* fanhui@2x.png */; };
+		F413C6811A35B4FF005410F5 /* fanhuibai@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F413C67A1A35B4FF005410F5 /* fanhuibai@2x.png */; };
 		F413C6821A35B4FF005410F5 /* fujin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F413C67B1A35B4FF005410F5 /* fujin@2x.png */; };
 		F413C6841A35B4FF005410F5 /* quyufenge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F413C67D1A35B4FF005410F5 /* quyufenge@2x.png */; };
 		F413C6851A35B4FF005410F5 /* shanchu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F413C67E1A35B4FF005410F5 /* shanchu@2x.png */; };
@@ -108,6 +108,8 @@
 		F4BDBB011A282AE9007C291A /* kafeiguan@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4BDBAFE1A282AE9007C291A /* kafeiguan@2x.png */; };
 		F4BDBB021A282AE9007C291A /* kafeiguan2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4BDBAFF1A282AE9007C291A /* kafeiguan2@2x.png */; };
 		F4BDBB101A287702007C291A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F4BDBB0F1A287702007C291A /* libz.dylib */; };
+		F4D88E931A40472D0092340E /* kuang@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4D88E911A40472D0092340E /* kuang@2x.png */; };
+		F4D88E941A40472D0092340E /* sousuo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4D88E921A40472D0092340E /* sousuo@2x.png */; };
 		F4FE036A1A3EE6D9004AF3F2 /* 100.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4FE03601A3EE6D8004AF3F2 /* 100.jpg */; };
 		F4FE036B1A3EE6D9004AF3F2 /* 101.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4FE03611A3EE6D8004AF3F2 /* 101.jpg */; };
 		F4FE036C1A3EE6D9004AF3F2 /* 102.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4FE03621A3EE6D8004AF3F2 /* 102.jpg */; };
@@ -345,7 +347,7 @@
 		96AAA6A71A2D8C8900BF2433 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		96AAA6E51A2D94C000BF2433 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		96AAA6E61A2D94C000BF2433 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
-		F413C67A1A35B4FF005410F5 /* fanhui@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fanhui@2x.png"; sourceTree = "<group>"; };
+		F413C67A1A35B4FF005410F5 /* fanhuibai@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fanhuibai@2x.png"; sourceTree = "<group>"; };
 		F413C67B1A35B4FF005410F5 /* fujin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fujin@2x.png"; sourceTree = "<group>"; };
 		F413C67D1A35B4FF005410F5 /* quyufenge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quyufenge@2x.png"; sourceTree = "<group>"; };
 		F413C67E1A35B4FF005410F5 /* shanchu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shanchu@2x.png"; sourceTree = "<group>"; };
@@ -460,6 +462,8 @@
 		F4BDBB0C1A287564007C291A /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
 		F4BDBB0D1A287564007C291A /* MobClickSocialAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClickSocialAnalytics.h; sourceTree = "<group>"; };
 		F4BDBB0F1A287702007C291A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F4D88E911A40472D0092340E /* kuang@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "kuang@2x.png"; sourceTree = "<group>"; };
+		F4D88E921A40472D0092340E /* sousuo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sousuo@2x.png"; sourceTree = "<group>"; };
 		F4FE03601A3EE6D8004AF3F2 /* 100.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 100.jpg; sourceTree = "<group>"; };
 		F4FE03611A3EE6D8004AF3F2 /* 101.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 101.jpg; sourceTree = "<group>"; };
 		F4FE03621A3EE6D8004AF3F2 /* 102.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 102.jpg; sourceTree = "<group>"; };
@@ -761,8 +765,10 @@
 				F413C6881A35B535005410F5 /* zhuti1@2x.png */,
 				F48FAAA61A369AB600F5CA5A /* sousuotiao2@2x.png */,
 				F413C6891A35B535005410F5 /* zhuti2@2x.png */,
-				F413C67A1A35B4FF005410F5 /* fanhui@2x.png */,
+				F413C67A1A35B4FF005410F5 /* fanhuibai@2x.png */,
 				F413C67B1A35B4FF005410F5 /* fujin@2x.png */,
+				F4D88E911A40472D0092340E /* kuang@2x.png */,
+				F4D88E921A40472D0092340E /* sousuo@2x.png */,
 				F413C67D1A35B4FF005410F5 /* quyufenge@2x.png */,
 				F413C67E1A35B4FF005410F5 /* shanchu@2x.png */,
 				F413C68E1A35B5BC005410F5 /* sanjiao@2x.png */,
@@ -1680,7 +1686,7 @@
 				FA42D5841A314AA10068DF6D /* jiuxianqiao@2x.png in Resources */,
 				FA2F7FA31A1D89F800F47149 /* LICENSE in Resources */,
 				F4FE03751A3EE70A004AF3F2 /* 107.jpg in Resources */,
-				F413C6811A35B4FF005410F5 /* fanhui@2x.png in Resources */,
+				F413C6811A35B4FF005410F5 /* fanhuibai@2x.png in Resources */,
 				FA3CAE911A299C6300C052EE /* quan@2x.png in Resources */,
 				FAB818DA1A2DC7D0003BE948 /* dibiao.png in Resources */,
 				FA86C29B1A1B1BF60093311A /* dianputupian@2x.png in Resources */,
@@ -1747,6 +1753,7 @@
 				FA42D58D1A314AA10068DF6D /* zhongguancun@2x.png in Resources */,
 				F4FE037B1A3EE97C004AF3F2 /* 202@2x.png in Resources */,
 				F4BDBB001A282AE9007C291A /* geren@2x.png in Resources */,
+				F4D88E941A40472D0092340E /* sousuo@2x.png in Resources */,
 				FA86C2501A1B1B7F0093311A /* dandianditu_tubiao.png in Resources */,
 				F413C68F1A35B5BC005410F5 /* sanjiao@2x.png in Resources */,
 				F49666CA1A1F30FC005960C3 /* 21.jpg in Resources */,
@@ -1828,6 +1835,7 @@
 				FA86C2891A1B1BF60093311A /* bianji-chakan-tubiao@2x.png in Resources */,
 				FAA47F5E1A1DF25D0014635A /* PhotoViewController.xib in Resources */,
 				FA86C2A51A1B1BF60093311A /* shijianzhou-biaoti@2x.png in Resources */,
+				F4D88E931A40472D0092340E /* kuang@2x.png in Resources */,
 				FA3693AC1A25C4B2000C036A /* fengexian@2x.png in Resources */,
 				F49666C81A1F30FC005960C3 /* 2.jpg in Resources */,
 				FAB818D91A2DC7D0003BE948 /* dianzan@2x.png in Resources */,
@@ -2073,7 +2081,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -2109,7 +2117,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2130,6 +2138,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/HelloCoffee/PrefixHeader.pch";
 				INFOPLIST_FILE = HelloCoffee/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2137,6 +2146,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -2153,6 +2163,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/HelloCoffee/PrefixHeader.pch";
 				INFOPLIST_FILE = HelloCoffee/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2160,6 +2171,7 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
