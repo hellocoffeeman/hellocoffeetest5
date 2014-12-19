@@ -24,7 +24,7 @@
     self.size = size;
     self.imageArray = imageArray;
     
-    NSLog(@" PageScrollView size : %@  ",NSStringFromCGSize(size));
+//    NSLog(@" PageScrollView size : %@  ",NSStringFromCGSize(size));
     
     int count = (int)imageArray.count;
     
@@ -57,8 +57,8 @@
         }
         
     }
-    NSLog(@" PageScrollView .frame = %@",NSStringFromCGRect(self.frame));
-    NSLog(@" PageScrollView .contentSize = %@",NSStringFromCGSize(self.contentSize));
+//    NSLog(@" PageScrollView .frame = %@",NSStringFromCGRect(self.frame));
+//    NSLog(@" PageScrollView .contentSize = %@",NSStringFromCGSize(self.contentSize));
     
     // page control
     if (showPageControl == YES) {

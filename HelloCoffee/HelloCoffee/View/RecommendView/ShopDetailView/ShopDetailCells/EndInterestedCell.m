@@ -24,6 +24,8 @@
     self.portraitImagesArray = imagesArray;
 
 }
+
+/*
 // 给Plummet添加方法
 -(void)addPlummetIVAction{
     
@@ -102,6 +104,8 @@
     currentPage = currentPage + 1;
     [self changePortraitImagesWithPage];
 }
+*/
+
 
 - (void)awakeFromNib {
     // Initialization code

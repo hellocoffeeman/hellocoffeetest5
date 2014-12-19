@@ -10,12 +10,9 @@
 
 @implementation FirstIntroduceCell
 
-// Cell上的内容
+#pragma mark - 内容 -
 -(void)setInformationWithSomething
 {
-    // 初始化 自定义Button
-    [self.checkButton setText:@"3794" andTypy:CheckButton];
-    [self.praiseButton setText:@"7690" andTypy:PraiseButton];
     
     // 编辑介绍 Label 自适应高度
     CGSize introduceLabelSize= [self getNewSizeOfRectWithText:self.introduceLabel.text limitSize:CGSizeMake(s_width-88, 170) fontSize:17.0];
@@ -24,7 +21,15 @@
     
 }
 
-// Cell上的点击 [ 头像、点赞、文章 ]
+-(void) setPortraitImage:(UIImage *)PortraitImage title:(NSString *)title introduce:(NSString *)introduce nickName:(NSString *)nickName honorString:(NSString *)honorString
+{
+    [self updateSubviewsFrame]; // 布局
+    
+    
+    
+}
+
+#pragma mark - 点击 [ 头像、文章 ] -
 -(void)addTarget:(id)target withHeadPortraitIVAction:(SEL)headPortraitIVAction introduceLabelAction:(SEL)introduceLabelAction praiseButtonAction:(SEL)praiseButtonAction
 {
     // 点击头像
@@ -33,8 +38,7 @@
     
     [self.headPortraitImageView addGestureRecognizer:headPortraitIVTap];
     
-    // 点击 赞
-    [self.praiseButton addTarget:target action:praiseButtonAction forControlEvents:UIControlEventTouchUpInside];
+
 //    
 //    UITapGestureRecognizer *praiseButtonTap = [[UITapGestureRecognizer alloc] initWithTarget:target action:praiseButtonAction];
 //    [self.praiseButton addGestureRecognizer:praiseButtonTap];
@@ -44,6 +48,42 @@
     UITapGestureRecognizer *introduceLabelTap = [[UITapGestureRecognizer alloc] initWithTarget:target action:introduceLabelAction];
     [self.introduceLabel addGestureRecognizer:introduceLabelTap];
     
+}
+
+#pragma mark - 布局 -
+-(void)updateSubviewsFrame
+{
+    // Cell 宽:  高:
+    
+    
+    // ImageView
+    // (1)切圆角
+    [self cutImageViewWithImageView:self.headPortraitImageView cornerRadius:self.headPortraitImageView.bounds.size.width/2];
+    [self cutImageViewWithImageView:self.backImageView cornerRadius:2.0];
+    
+    
+    
+    // Lable
+    // 文字行间距
+    
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc]init];
+    paragraphStyle.lineSpacing = 6.5;
+    
+    NSDictionary *attributes = @{ NSFontAttributeName:[UIFont systemFontOfSize:15], NSParagraphStyleAttributeName:paragraphStyle};
+    self.introduceLabel.attributedText = [[NSAttributedString alloc]initWithString:self.introduceLabel.text attributes:attributes];
+    
+//    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:self.introduceLabel.text];
+//    [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, [self.introduceLabel.text length])];
+//    self.introduceLabel.attributedText = attributedString;
+    
+    
+}
+
+#pragma mark - 圆角 -
+-(void) cutImageViewWithImageView:(UIImageView *)imageView cornerRadius:(CGFloat)cornerRadius
+{
+    imageView.layer.cornerRadius = cornerRadius;
+    imageView.layer.masksToBounds = YES;
 }
 
 #pragma mark - 计算高度 -

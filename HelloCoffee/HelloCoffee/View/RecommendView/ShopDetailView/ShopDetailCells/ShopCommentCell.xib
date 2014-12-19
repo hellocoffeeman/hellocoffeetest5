@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -13,40 +14,65 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收电费卡电视将发挥空间和开户送快递费可视对讲分行的快捷回复打卡时间和疯狂的经适房打卡时间发货打卡时间发货打卡时间发货打卡时间发货阿克苏的话罚款是的话发打卡时间发货打卡时间发货啊" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="geG-2x-eyb">
-                        <rect key="frame" x="0.0" y="43" width="320" height="52"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收电费卡电视将发挥空间和开户送快递费可视对讲分行的快捷回复打卡时间和疯狂的经适房打卡时间发货打卡时间发货打卡时间发货打卡时间发货阿克苏的话罚款是的话发打卡时间发货打卡时间发货啊" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geG-2x-eyb">
+                        <rect key="frame" x="50" y="35" width="220" height="71"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2014-11-12" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MmZ-rw-C2a">
-                        <rect key="frame" x="211" y="95" width="101" height="18"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <view contentMode="scaleToFill" id="bee-bT-AOn">
-                        <rect key="frame" x="35" y="8" width="250" height="28"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bee-bT-AOn">
+                        <rect key="frame" x="10" y="9" width="240" height="28"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="putongren-dengji.png" id="H70-0d-xfr">
-                                <rect key="frame" x="222" y="6" width="14" height="16"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="putongren-dengji.png" translatesAutoresizingMaskIntoConstraints="NO" id="H70-0d-xfr">
+                                <rect key="frame" x="140" y="7" width="14" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="14" id="6wd-jZ-Bf6"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WeiXin_筱筱笑" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IjU-5i-41G">
-                                <rect key="frame" x="32" y="0.0" width="187" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WeiXin_筱筱笑笑" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IjU-5i-41G">
+                                <rect key="frame" x="0.0" y="1" width="140" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                        <constraints>
+                            <constraint firstItem="IjU-5i-41G" firstAttribute="top" secondItem="bee-bT-AOn" secondAttribute="top" constant="1" id="F7S-IV-65F"/>
+                            <constraint firstItem="H70-0d-xfr" firstAttribute="leading" secondItem="IjU-5i-41G" secondAttribute="trailing" id="KXw-p3-2qc"/>
+                            <constraint firstItem="H70-0d-xfr" firstAttribute="top" secondItem="bee-bT-AOn" secondAttribute="top" constant="7" id="WEl-X2-xSf"/>
+                            <constraint firstItem="IjU-5i-41G" firstAttribute="leading" secondItem="bee-bT-AOn" secondAttribute="leading" id="XIO-4k-kaR"/>
+                            <constraint firstAttribute="trailing" secondItem="H70-0d-xfr" secondAttribute="trailing" constant="86" id="ivd-IL-aEA"/>
+                            <constraint firstItem="IjU-5i-41G" firstAttribute="centerY" secondItem="H70-0d-xfr" secondAttribute="centerY" id="tI2-3B-46k"/>
+                        </constraints>
                     </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2014-11-12" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MmZ-rw-C2a">
+                        <rect key="frame" x="202" y="16" width="101" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="101" id="7JS-eI-9fZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="bee-bT-AOn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="01Q-Y8-nCT"/>
+                    <constraint firstItem="bee-bT-AOn" firstAttribute="centerY" secondItem="MmZ-rw-C2a" secondAttribute="centerY" id="MDj-r6-82w"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="MmZ-rw-C2a" secondAttribute="trailing" constant="9" id="Ml6-Tc-QXI"/>
+                    <constraint firstItem="geG-2x-eyb" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="WbW-N2-1lv"/>
+                    <constraint firstItem="geG-2x-eyb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="42" id="YAh-WF-TNX"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="bee-bT-AOn" secondAttribute="trailing" constant="62" id="ZTm-vQ-1Nj"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="geG-2x-eyb" secondAttribute="bottom" constant="5" id="aGF-Ey-lMc"/>
+                    <constraint firstItem="geG-2x-eyb" firstAttribute="top" secondItem="MmZ-rw-C2a" secondAttribute="bottom" constant="4" id="aRh-fA-Ixr"/>
+                    <constraint firstItem="bee-bT-AOn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="1" id="gxK-lG-efU"/>
+                    <constraint firstItem="MmZ-rw-C2a" firstAttribute="top" secondItem="bee-bT-AOn" secondAttribute="top" constant="7" id="jWA-Oz-Cmf"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="bee-bT-AOn" secondAttribute="bottom" constant="74" id="txE-vK-329"/>
+                </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="badgeImageView" destination="H70-0d-xfr" id="9Zq-5r-smV"/>
                 <outlet property="contentLabel" destination="geG-2x-eyb" id="KQH-wQ-Tkw"/>
@@ -54,15 +80,10 @@
                 <outlet property="nickNameView" destination="bee-bT-AOn" id="fLw-t1-gNV"/>
                 <outlet property="nickNamelabel" destination="IjU-5i-41G" id="5Av-NK-kZe"/>
             </connections>
-            <point key="canvasLocation" x="38" y="414"/>
+            <point key="canvasLocation" x="178" y="465"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="putongren-dengji.png" width="13" height="16"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>

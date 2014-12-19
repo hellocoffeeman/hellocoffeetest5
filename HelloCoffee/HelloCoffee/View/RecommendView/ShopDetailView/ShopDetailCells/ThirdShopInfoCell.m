@@ -13,7 +13,7 @@
 -(void)setInformationWithSomething
 {
         
-    NSArray *iconImageArray = @[[UIImage imageNamed:@"dianpu-tigongdefuwu-tubiao1"],[UIImage imageNamed:@"dianpu-tigongdefuwu-tubiao1"],[UIImage imageNamed:@"dianpu-tigongdefuwu-tubiao1"],[UIImage imageNamed:@"dianpu-tigongdefuwu-tubiao1"],[UIImage imageNamed:@"dianpu-tigongdefuwu-tubiao1"],[UIImage imageNamed:@"dianpu-tigongdefuwu-tubiao1"],[UIImage imageNamed:@"dianpu-tigongdefuwu-tubiao1"]];
+    NSArray *iconImageArray = @[[UIImage imageNamed:@"dianpu-tigongdefuwu-tubiao"],[UIImage imageNamed:@"dianpu-tigongdefuwu-tubiao"],[UIImage imageNamed:@"dianpu-tigongdefuwu-tubiao"],[UIImage imageNamed:@"dianpu-tigongdefuwu-tubiao"],[UIImage imageNamed:@"dianpu-tigongdefuwu-tubiao"],[UIImage imageNamed:@"dianpu-tigongdefuwu-tubiao"],[UIImage imageNamed:@"dianpu-tigongdefuwu-tubiao"]];
     [self.offerServiceScrollView setImageArrayWithImageArray:iconImageArray imageSize:CGSizeMake(30, 30) numberOfImageInEachPage:4];
     
 }

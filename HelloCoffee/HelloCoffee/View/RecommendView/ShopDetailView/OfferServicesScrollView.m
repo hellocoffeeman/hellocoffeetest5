@@ -13,9 +13,7 @@
 
 -(void)setImageArrayWithImageArray:(NSArray *)imageArray imageSize:(CGSize)imageSize numberOfImageInEachPage:(int)numberOfImageInEachPage
 {
-//    CGFloat width = self.bounds.size.width;
-//    CGFloat height = self.bounds.size.height;
-    CGFloat width = s_width - 48*2;
+    CGFloat width = s_width - 155;
     CGFloat height = 30;
     CGFloat space = ((width / numberOfImageInEachPage) - imageSize.width)/2; // Image 间隔的一半
     

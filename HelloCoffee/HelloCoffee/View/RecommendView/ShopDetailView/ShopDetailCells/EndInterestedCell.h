@@ -10,13 +10,11 @@
 
 @interface EndInterestedCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UIImageView *lineImageView;
-@property (weak, nonatomic) IBOutlet UIImageView *plummetImageView;
-
 @property (weak, nonatomic) IBOutlet UIImageView *portraitIV1;
 @property (weak, nonatomic) IBOutlet UIImageView *portraitIV2;
 @property (weak, nonatomic) IBOutlet UIImageView *portraitIV3;
 @property (weak, nonatomic) IBOutlet UIImageView *portraitIV4;
+@property (weak, nonatomic) IBOutlet UIImageView *portraitIV5;
 
 @property (nonatomic, strong) NSArray *portraitImagesArray;
 

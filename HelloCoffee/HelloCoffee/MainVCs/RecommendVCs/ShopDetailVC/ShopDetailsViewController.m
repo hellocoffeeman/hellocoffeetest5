@@ -16,6 +16,7 @@
 #import "ShopCommentCell.h"
 
 #import "ReserveButtonView.h" // 自定义 预定ButtonView
+#import "BlueHeaderView.h" // Header View
 
 //跳转的页面
 #import "personSelf.h"
@@ -28,13 +29,17 @@
 
 @interface ShopDetailsViewController ()<UITableViewDataSource,UITableViewDelegate>
 
-// 数据
+#pragma mark - 数据 -
 @property (nonatomic, strong) NSMutableArray *topPhotoArray; // 顶部 单店相册
 
 
-// 视图控件
+#pragma mark - 视图控件 -
 @property (weak, nonatomic) IBOutlet UITableView *mainTableView;
 @property (nonatomic, strong) ReserveButtonView *reserveButtonView;
+// 更换 Department
+@property (nonatomic, strong) UIView *blueView;
+@property (nonatomic, strong) UIButton *leftPartButton;
+@property (nonatomic, strong) UIButton *rightPartButton;
 
 @end
 
@@ -56,7 +61,7 @@
     //  - 数据 -
     
     // 相册 Array
-    self.topPhotoArray = [NSMutableArray arrayWithObjects:[UIImage imageNamed:@"1"],[UIImage imageNamed:@"2"],[UIImage imageNamed:@"3"], nil];
+    self.topPhotoArray = [NSMutableArray arrayWithObjects:[UIImage imageNamed:@"lunbo1"],[UIImage imageNamed:@"lunbo2"],[UIImage imageNamed:@"lunbo3"],[UIImage imageNamed:@"lunbo4"], nil];
     
     //  - 视图控件 -
     
@@ -91,8 +96,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - TableView Delegate -
+#pragma mark - TableView  -
 
+#pragma mark - TableView Cell -
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // 判断
@@ -109,23 +115,49 @@
     // 判断
     if ([tableView isEqual:self.mainTableView]) {
         
-        switch (indexPath.row) {
+        switch (indexPath.section) {
             case 0:
             {
                 TopPicturesCell *cell = [[[NSBundle mainBundle]loadNibNamed:@"TopPicturesCell" owner:self options:nil]lastObject];
-                // 得到 image Array
                 [cell setScrollViewDelegate:self imageArray:self.topPhotoArray target:self scrollViewAction:@selector(topScrollViewAction:)];
+                [cell addTarget:self changeDepartmentAction:@selector(changeDepartmentAction:)];
+                
+                if (self.leftPartButton) {
+                    BOOL isLeftPart = self.leftPartButton.selected;
+                    cell.leftPartButton.selected = isLeftPart;
+                    cell.rightPartButton.selected = !isLeftPart;
+                    if (isLeftPart == YES ) {
+                        cell.blueView.center = CGPointMake(s_width/2-97, s_width/1.875+25);
+                    }
+                    else{
+                        cell.blueView.center = CGPointMake(s_width/2+42, s_width/1.875+25);
+                    }
+                }else{
+                    cell.leftPartButton.selected = YES;
+                }
+                self.blueView = cell.blueView;
+                self.leftPartButton = cell.leftPartButton;
+                self.rightPartButton = cell.rightPartButton;
                 cell.selectionStyle = UITableViewCellSelectionStyleNone;
                 return cell;
             }
                 break;
             case 1:
             {
-                FirstIntroduceCell *cell = [[[NSBundle mainBundle]loadNibNamed:@"FirstIntroduceCell" owner:self options:nil]lastObject];
-                [cell setInformationWithSomething];
-                [cell addTarget:self withHeadPortraitIVAction:@selector(FirstHeadPortraitIVAction:) introduceLabelAction:@selector(FirstIntroduceLabelAction:) praiseButtonAction:@selector(FirstPraiseButtonAction:)];
-                cell.selectionStyle = UITableViewCellSelectionStyleNone;
-                return cell;
+                if (self.leftPartButton.selected == YES) {
+                    FirstIntroduceCell *cell = [[[NSBundle mainBundle]loadNibNamed:@"FirstIntroduceCell" owner:self options:nil]lastObject];
+                    [cell setPortraitImage:nil title:nil introduce:nil nickName:nil honorString:nil];
+                    [cell addTarget:self withHeadPortraitIVAction:@selector(FirstHeadPortraitIVAction:) introduceLabelAction:@selector(FirstIntroduceLabelAction:) praiseButtonAction:@selector(FirstPraiseButtonAction:)];
+                    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+                    return cell;
+                }else{
+                    // 地图 Section
+                    ThirdShopInfoCell *cell = [[[NSBundle mainBundle]loadNibNamed:@"ThirdShopInfoCell" owner:self options:nil]lastObject];
+                    [cell setInformationWithSomething];
+                    [cell addTarget:self withAddressLabelAction:@selector(ThirdAddressLabelAction:) headPortraitImageView:@selector(ThirdHeadPortraitIVAction:)];
+                    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+                    return cell;
+                }
             }
                 break;
             case 2:
@@ -141,20 +173,10 @@
                 break;
             case 3:
             {
-                ThirdShopInfoCell *cell = [[[NSBundle mainBundle]loadNibNamed:@"ThirdShopInfoCell" owner:self options:nil]lastObject];
-                [cell setInformationWithSomething];
-                [cell addTarget:self withAddressLabelAction:@selector(ThirdAddressLabelAction:) headPortraitImageView:@selector(ThirdHeadPortraitIVAction:)];
-                cell.selectionStyle = UITableViewCellSelectionStyleNone;
-                return cell;
-            }
-                break;
-            case 4:
-            {
                 EndInterestedCell *cell = [[[NSBundle mainBundle]loadNibNamed:@"EndInterestedCell" owner:self options:nil]lastObject];
                 // 得到 image Array
                 NSArray *imageArray = [NSArray arrayWithObjects:[UIImage imageNamed:@"kenengganxingquderen-touxiang1.png"],[UIImage imageNamed:@"touxiang.png"], nil];
                 [cell setInformationWithPortraitImagesArray:imageArray];
-                [cell addPlummetIVAction]; // 添加坠子的动画 [ 下拉、换图片 ]
                 cell.selectionStyle = UITableViewCellSelectionStyleNone;
                 return cell;
             }
@@ -174,11 +196,22 @@
     
 }
 
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    if (self.leftPartButton.selected == YES || !self.leftPartButton) {
+        return 4;
+    }
+    return 2;
+}
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // 判断
     if ([tableView isEqual:self.mainTableView]) {
-        return 5; // 界面模块数
+        if (section == 1 && (self.leftPartButton.selected == YES || !self.leftPartButton)) {
+            return 2; // 文章数 
+        }
+        return 1;
     }else{
         return 2; // 评论数 0、1、2
     }
@@ -192,22 +225,24 @@
     // 判断
     if ([tableView isEqual:self.mainTableView]) {
         
-        switch (indexPath.row) {
+        switch (indexPath.section) {
             case 0:
-                height = s_width/1.875;
+                height = s_width/1.875 + 45;
                 break;
             case 1:
-//                height = 360;
-                height = [self getNewSizeOfRectWithText:[NSString stringWithFormat:@"从高品质的咖啡豆到一杯完美的咖啡，我们致力于使其间每个程序与细节均尽善尽美，务求为顾客奉上风味纯正的最佳意式咖啡"] limitSize:CGSizeMake(s_width-88, 170) fontSize:17.0].height + 190;
+            {
+//                if (self.leftPartButton.selected == YES) height = 255;
+                if (self.leftPartButton.selected == YES) height = (s_width-10)/1.275 + 10;
+//                else height = 560;
+                else height = s_width/1.875 + 15 + (s_width-10)*1.23;
+            }
                 break;
             case 2:
-                height = 290;
+//                height = 255;
+                height = (s_width-10)/1.26 + 10;
                 break;
             case 3:
-                height = 520;
-                break;
-            case 4:
-                height = 110;
+                height = 76;
                 break;
             default:
                 break;
@@ -215,15 +250,82 @@
         
     }else{
         
-        height = 120;
+//        height = 120;
+        height = (s_width-15)/1.26/2;
     }
     
     return height;
 }
+#pragma mark - TableView section -
 
-#pragma mark - Cell上的 点击 -
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    if (section == 0) return 0.0;
+    return 35;
+}
 
-// TopPicturesCell
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    if (section == 0) return 0.0;
+    return 30;
+}
+
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    if (section == 0) return nil;
+    NSString *headerTltle;
+    if (self.leftPartButton.selected == YES) {
+        NSArray *array = @[@"",@"推荐",@"评论",@"可能感兴趣的小伙伴"];
+        headerTltle = array[section];
+    }else{
+        headerTltle = @"店铺";
+    }
+    
+    BlueHeaderView *blueHeaderView = [[BlueHeaderView alloc] initWithFrame:CGRectMake(0, 0, s_width, 35) title:headerTltle showCommentCountButton:NO target:nil commentCountButtonAction:nil];
+    blueHeaderView.backgroundColor = [UIColor whiteColor];
+    
+    
+    return blueHeaderView;
+}
+
+-(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    if (section == 0) return nil;
+
+    UIView *footerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, s_width, 10)];
+    footerView.backgroundColor = [UIColor whiteColor];
+    
+    UIView *blueLineView = [[UIView alloc] initWithFrame:CGRectMake(s_width/2, 5, s_width/2, 1)];
+    blueLineView.backgroundColor = kBlueColor;
+    [footerView addSubview:blueLineView];
+    
+    return footerView;
+}
+#pragma mark - Scroll -
+// 去掉 Tableview header/foooter view 黏性(sticky)
+//- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+//    
+//    CGFloat sectionHeaderHeight = 35;
+////    CGFloat sectionFooterHeight = 30;
+//
+//    if (scrollView.contentOffset.y<=sectionHeaderHeight && scrollView.contentOffset.y>=0) {
+//        scrollView.contentInset = UIEdgeInsetsMake(-scrollView.contentOffset.y, 0, 0, 0);
+//    }
+//    else if (scrollView.contentOffset.y>=sectionHeaderHeight) {
+//        scrollView.contentInset = UIEdgeInsetsMake(-sectionHeaderHeight, 0, 0, 0);
+//    }
+//    
+//    if (scrollView.contentOffset.y >= sectionHeaderHeight)
+//    {
+//        scrollView.contentInset = UIEdgeInsetsMake(0, 0, -sectionHeaderHeight, 0);
+//    }
+//
+//}
+
+#pragma mark - - Action - -
+
+#pragma mark - TopPicturesCell -
+// 跳转 PhotoVC
 -(void)topScrollViewAction:(id)sender
 {
     NSLog(@" TopPicturesCell ScrollViewAction ");
@@ -236,11 +338,30 @@
     photoVC.pictureArray = self.topPhotoArray;
     photoVC.currentPage = (int)scrollView.contentOffset.x/s_width;
     [self presentViewController:photoVC animated:YES completion:nil];
-    
-    
 }
 
-// FirstIntroduceCell
+// 更换 Department
+-(void) changeDepartmentAction:(UIButton *)button
+{
+    BOOL isLeftPart = [button isEqual:self.leftPartButton];
+
+    self.leftPartButton.selected = isLeftPart;
+    self.rightPartButton.selected = !isLeftPart;
+    
+
+    [self.mainTableView reloadData];
+    
+//    if (isLeftPart == YES ) {
+//        self.blueView.center = CGPointMake(s_width/2-97, s_width/1.875+25);
+//    }else{
+//        self.blueView.center = CGPointMake(s_width/2+42, s_width/1.875+25);
+//    }
+//    NSLog(@"2 Button =====  isLeftPart = %d  =====",isLeftPart);
+
+}
+
+#pragma mark - FirstIntroduceCell -
+
 -(void)FirstHeadPortraitIVAction:(id)sender
 {
     NSLog(@" FirstIntroduceCell HeadPortraitIVAction ");
@@ -271,7 +392,7 @@
 
 }
 
-// ThirdShopInfoCell
+#pragma mark - ThirdShopInfoCell -
 -(void)ThirdAddressLabelAction:(id)sender
 {
     NSLog(@" ThirdShopInfoCell addressLabelAction ");
@@ -290,7 +411,7 @@
     
 }
 
-// 预定
+#pragma mark - 预定 -
 -(void)reserveButtonViewAction:(id)sender{
     
     ReserveViewController *reserveVC = [[ReserveViewController alloc]init];
@@ -301,7 +422,7 @@
     NSLog(@" ReserveButtonViewAction ");
 }
 
-#pragma mark -  -
+#pragma mark - 辅助方法 -
 
 #pragma mark - 计算高度 -
 -(CGSize)getNewSizeOfRectWithText:(NSString *)text limitSize:(CGSize)limitSize fontSize:(CGFloat)fontSize
