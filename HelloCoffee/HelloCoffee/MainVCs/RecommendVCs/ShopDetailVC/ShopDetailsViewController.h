@@ -6,8 +6,8 @@
 //  Copyright (c) 2014年 HelloCoffee. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface ShopDetailsViewController : UIViewController
+@interface ShopDetailsViewController : BaseViewController
 
 @end

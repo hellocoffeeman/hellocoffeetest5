@@ -7,15 +7,18 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+//#import "ViewController.h"
 #import "httpManager.h"
 #import "baseTabBarViewController.h"
 #import "recommend.h"
 #import "search.h"
 #import "personSelf.h"
+#import "WelcomeViewController.h"//引导页
 
 
-
+#import "UMSocial.h"
+#import "UMSocialWechatHandler.h"
+#import <AlipaySDK/AlipaySDK.h>
 @interface AppDelegate ()
 
 @end
@@ -27,8 +30,17 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
  
+    [UMSocialData setAppKey:UMAppKey];
+    [UMSocialWechatHandler setWXAppId:@"wx2abe16cd07bec300" appSecret:@"8d95015ff7c71a22b57f7c61752c16b3" url:@"http://www.umeng.com/social"];
+    
+ [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     [self UMengStatisticalData];
     
+//
+   
+    
+    
+//    
 //    推送   IOS8有改变。。。else后面是 8一下版本
  /*   if (version >=8.0) {
         [[UIApplication sharedApplication]registerUserNotificationSettings:[UIUserNotificationSettings
@@ -87,13 +99,27 @@
         
         Class vcClass =NSClassFromString(className);
         UIViewController * vc =[[vcClass alloc]init];
+        if(vcClass==[recommend class])
+        {
+            recommend *rem=(recommend *)vc;
+            //rem.isScroll=YES;
+            rem.isTabbar=YES;
+        }
+
         UINavigationController * nav = [[UINavigationController alloc]initWithRootViewController:vc];
         [viewControllers addObject:nav];
     }
+    
+    
+    
+  
     UITabBarController * tbc = [[UITabBarController alloc]init];
     tbc.viewControllers = viewControllers;
+    tbc.tabBar.barTintColor = kBlueColor;
+//    tbc.tabBar.alpha = 1.0f;
+//    tbc.tabBar.backgroundImage = [UIImage imageNamed:@"dilan"];
     
-    tbc.tabBar.backgroundImage = [UIImage imageNamed:@"dilan@2x.png"];
+    //tbc.tabBar.barTintColor=kBlueColor;
     [tbc.tabBar setTintColor:[UIColor whiteColor]];
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
                                                        [UIColor whiteColor], NSForegroundColorAttributeName,
@@ -101,7 +127,7 @@
     NSArray * imageName = @[@"tuijian-wei@2x.png",@"xunmi-wei@2x.png",@"wode-wei@2x.png"];
     NSArray * selectImageName = @[@"tuijian-xuan@2x.png",@"xunmi-xuan@2x.png",@"wode-xuan@2x.png"];
     NSArray * titleArray = @[@"推荐",@"寻觅",@"我的"];
-    for (NSInteger i = 0; i<imageName.count; i++) {
+    for (int i = 0; i<3; i++) {
         UITabBarItem * item = [tbc.tabBar.items objectAtIndex:i];
         item.image = [[UIImage imageNamed:imageName[i]]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         item.title = titleArray[i];
@@ -109,16 +135,6 @@
     }
     
     self.window.rootViewController = tbc;
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     [self.window makeKeyAndVisible];
     return YES;
@@ -154,8 +170,33 @@
    
     //设置打印sdk的log信息
 //    发布时改NO
-    [MobClick setLogEnabled:YES];
+    [MobClick setLogEnabled:NO];
     
+}
+#pragma mark -
+#pragma mark 微信的。。。
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    return  [UMSocialSnsService handleOpenURL:url];
+}
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation
+{
+    //跳转支付宝钱包进行支付，需要将支付宝钱包的支付结果回传给SDK
+    if ([url.host isEqualToString:@"safepay"]) {
+        [[AlipaySDK defaultService]
+         processOrderWithPaymentResult:url
+         standbyCallback:^(NSDictionary *resultDic) {
+             
+             // NSLog(@"result = %@", resultDic);
+             
+         }];
+    }
+
+    
+    return  [UMSocialSnsService handleOpenURL:url];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -179,5 +220,27 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+//- (BOOL)application:(UIApplication *)application
+//            openURL:(NSURL *)url
+//  sourceApplication:(NSString *)sourceApplication
+//         annotation:(id)annotation {
+//    
+//    
+//    
+//    //跳转支付宝钱包进行支付，需要将支付宝钱包的支付结果回传给SDK
+//    if ([url.host isEqualToString:@"safepay"]) {
+//        [[AlipaySDK defaultService]
+//         processOrderWithPaymentResult:url
+//         standbyCallback:^(NSDictionary *resultDic) {
+//             
+//             // NSLog(@"result = %@", resultDic);
+//             
+//         }];
+//    }
+//    
+//    return YES;
+//}
+
 
 @end

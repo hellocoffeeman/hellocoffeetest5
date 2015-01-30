@@ -201,7 +201,7 @@ static ReserveDateHandel *_reserveDateHandel = nil;
     NSArray *array_1 = @[@"Mon",@"Tue",@"Wed",@"Thu",@"Fri",@"Sat",@"Sun"]; // 英文 系统下
     NSArray *array_2 = @[@"周一",@"周二",@"周三",@"周四",@"周五",@"周六",@"周日"]; // 中文 系统下
     
-    NSArray *array_3 = @[@"一",@"二",@"三",@"四",@"五",@"六",@"日"];
+    NSArray *array_3 = @[@"周\n一",@"周\n二",@"周\n三",@"周\n四",@"周\n五",@"周\n六",@"周\n日"];
     
     NSInteger i = [array_1 indexOfObject:string];
     

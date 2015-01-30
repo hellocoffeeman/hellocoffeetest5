@@ -7,7 +7,6 @@
 //
 
 #import "BaseViewController.h"
-#import "TMQuiltView.h"
 
 typedef enum {
     WantSight = 0,//情景

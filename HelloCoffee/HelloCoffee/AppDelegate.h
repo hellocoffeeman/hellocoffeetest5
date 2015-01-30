@@ -10,6 +10,7 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 //dsajkdask
+//kbb
 @property (strong, nonatomic) UIWindow *window;
 
 @end

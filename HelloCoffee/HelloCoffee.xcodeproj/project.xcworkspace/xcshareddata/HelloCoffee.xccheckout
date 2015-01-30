@@ -5,36 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>BC408E4A-46D2-41F4-92D4-F4EB7C8B46D2</string>
+	<string>E678B7A5-015C-4FC3-B71A-C4E359974B67</string>
 	<key>IDESourceControlProjectName</key>
 	<string>HelloCoffee</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>982A89F9BFC1356DEE8D4297207FF53653F633EC</key>
-		<string>https://github.com/hellocoffeeman/hellocoffeetest5.git</string>
+		<key>59d98b28-dd28-4920-bbd3-f3005e7bc39a</key>
+		<string>svn://172.16.2.105/mycode</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>HelloCoffee/HelloCoffee.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>982A89F9BFC1356DEE8D4297207FF53653F633EC</key>
+		<key>59d98b28-dd28-4920-bbd3-f3005e7bc39a</key>
 		<string>../../..</string>
 	</dict>
-	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/hellocoffeeman/hellocoffeetest5.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>982A89F9BFC1356DEE8D4297207FF53653F633EC</string>
+	<string>59d98b28-dd28-4920-bbd3-f3005e7bc39a</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
+			<string>public.vcs.subversion</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>982A89F9BFC1356DEE8D4297207FF53653F633EC</string>
+			<string>59d98b28-dd28-4920-bbd3-f3005e7bc39a</string>
 			<key>IDESourceControlWCCName</key>
-			<string>hellocoffeetest5</string>
+			<string>mycode</string>
 		</dict>
 	</array>
 </dict>

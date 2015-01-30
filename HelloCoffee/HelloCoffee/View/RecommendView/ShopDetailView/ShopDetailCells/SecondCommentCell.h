@@ -10,10 +10,7 @@
 
 @interface SecondCommentCell : UITableViewCell
 
+@property (nonatomic, assign) int commentCount;
 @property (weak, nonatomic) IBOutlet UITableView *commentTableView;
-
-
-
-
 
 @end

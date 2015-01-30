@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ArticleListViewController">
+            <connections>
+                <outlet property="mainCollectionView" destination="Ax9-ZF-2Kk" id="Kbe-hD-MPU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Ax9-ZF-2Kk">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <inset key="scrollIndicatorInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="7" minimumInteritemSpacing="7" id="9ZG-Cz-PBI">
+                        <size key="itemSize" width="380" height="180"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="7" minY="8" maxX="7" maxY="8"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="Ax9-ZF-2Kk" secondAttribute="centerX" id="Bv7-Om-TPM"/>
+                <constraint firstItem="Ax9-ZF-2Kk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ETK-b5-VXi"/>
+                <constraint firstItem="Ax9-ZF-2Kk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="Qzg-K0-yZa"/>
+                <constraint firstAttribute="bottom" secondItem="Ax9-ZF-2Kk" secondAttribute="bottom" id="ktB-vF-dP9"/>
+                <constraint firstAttribute="trailing" secondItem="Ax9-ZF-2Kk" secondAttribute="trailing" id="pjC-kH-HRE"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Bv7-Om-TPM"/>
+                    <exclude reference="ETK-b5-VXi"/>
+                    <exclude reference="Qzg-K0-yZa"/>
+                    <exclude reference="ktB-vF-dP9"/>
+                    <exclude reference="pjC-kH-HRE"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="constraints">
+                    <include reference="Bv7-Om-TPM"/>
+                    <include reference="ETK-b5-VXi"/>
+                    <include reference="Qzg-K0-yZa"/>
+                    <include reference="ktB-vF-dP9"/>
+                    <include reference="pjC-kH-HRE"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

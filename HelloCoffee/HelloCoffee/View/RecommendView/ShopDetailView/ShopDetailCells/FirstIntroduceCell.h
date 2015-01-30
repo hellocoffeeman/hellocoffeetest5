@@ -7,34 +7,30 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ImageLabelButton.h"
+#import "FollowView.h"
+#import "SpacingLabel.h"
+#import "ImageButton.h"
 
 @interface FirstIntroduceCell : UITableViewCell
 
-// ImageView
-@property (weak, nonatomic) IBOutlet UIImageView *cardImageView; // 背景 卡片 ImgV
-@property (weak, nonatomic) IBOutlet UIImageView *backImageView;
-@property (weak, nonatomic) IBOutlet UIImageView *portraitBorderImageView; // 头像框 ImgV
-@property (weak, nonatomic) IBOutlet UIImageView *headPortraitImageView; // 头像 ImgV
-@property (weak, nonatomic) IBOutlet UIImageView *badgeImageView; // 头衔 标签 ImgV
+// - Label -
+@property (weak, nonatomic) IBOutlet SpacingLabel *titleLabel; // 文章 标题 Label
+@property (weak, nonatomic) IBOutlet UILabel *by_nickNameLabel; // 署名 By_Name
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel; // 日期 Label
 
-// 渐隐 ImageView
-@property (weak, nonatomic) IBOutlet UIImageView *imageGauze_1;
-@property (weak, nonatomic) IBOutlet UIImageView *imageGauze_2;
-@property (weak, nonatomic) IBOutlet UIImageView *labelGauze;
+// - ImageView -
+@property (weak, nonatomic) IBOutlet UIImageView *backImageView; // 店铺图 背景框
+@property (weak, nonatomic) IBOutlet UIImageView *shopImageView; // 店铺图
 
-// Label 
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel; // 文章 标题 Label
-@property (weak, nonatomic) IBOutlet UILabel *introduceLabel; // 编辑介绍 Label
-@property (weak, nonatomic) IBOutlet UILabel *by_label; // "by" Label
-@property (weak, nonatomic) IBOutlet UILabel *nickNameLabel; // 昵称 Lable
-@property (weak, nonatomic) IBOutlet UILabel *honorLabel; // 头衔 Label
+// - Button -
+@property (weak, nonatomic) IBOutlet ImageButton *shareImgBtn;
+@property (weak, nonatomic) IBOutlet ImageButton *praiseImgBtn;
+@property (weak, nonatomic) IBOutlet UIButton *lookMoreButton;
 
+@property (weak, nonatomic) IBOutlet UIView *segmentView;
 
 // Cell 方法
 -(void) setInformationWithSomething; // 参数 - Model
+-(void) setShopImage:(UIImage *)shopImage title:(NSString *)title nickName:(NSString *)nickName dateString:(NSString *)dateString praiseCount:(int)praiseCount buttonTarget:(id)buttonTarget shareAction:(SEL)shareAction praiseAction:(SEL)praiseAction lookMoreAction:(SEL)lookMoreAction;
 
--(void) setPortraitImage:(UIImage *)PortraitImage title:(NSString *)title introduce:(NSString *)introduce nickName:(NSString *)nickName honorString:(NSString *)honorString;
-
--(void)addTarget:(id)target withHeadPortraitIVAction:(SEL)headPortraitIVAction introduceLabelAction:(SEL)introduceLabelAction praiseButtonAction:(SEL)praiseButtonAction; // Target - Action
 @end

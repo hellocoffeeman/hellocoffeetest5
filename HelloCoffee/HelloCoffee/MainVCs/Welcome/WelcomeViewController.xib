@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeViewController">
+            <connections>
+                <outlet property="WelcomeScroller" destination="lQB-g6-oYp" id="UiE-L4-d4k"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lQB-g6-oYp">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="lQB-g6-oYp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SYb-sJ-517"/>
+                <constraint firstAttribute="bottom" secondItem="lQB-g6-oYp" secondAttribute="bottom" id="YJH-0q-bDV"/>
+                <constraint firstItem="lQB-g6-oYp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dlh-Rn-vxC"/>
+                <constraint firstAttribute="trailing" secondItem="lQB-g6-oYp" secondAttribute="trailing" id="mU5-ZQ-s0W"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="lQB-g6-oYp"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="SYb-sJ-517"/>
+                    <exclude reference="YJH-0q-bDV"/>
+                    <exclude reference="dlh-Rn-vxC"/>
+                    <exclude reference="mU5-ZQ-s0W"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="lQB-g6-oYp"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="SYb-sJ-517"/>
+                    <include reference="YJH-0q-bDV"/>
+                    <include reference="dlh-Rn-vxC"/>
+                    <include reference="mU5-ZQ-s0W"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

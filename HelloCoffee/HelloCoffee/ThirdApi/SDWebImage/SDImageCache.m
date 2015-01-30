@@ -313,6 +313,7 @@ static SDImageCache *instance;
 }
 
 - (void)clearDisk
+
 {
     [cacheInQueue cancelAllOperations];
     [[NSFileManager defaultManager] removeItemAtPath:diskCachePath error:nil];

@@ -6,9 +6,9 @@
 //  Copyright (c) 2014年 HelloCoffee. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface MapViewController : UIViewController
+@interface MapViewController : BaseViewController
 
 @property (copy,nonatomic)NSString *addr;
 

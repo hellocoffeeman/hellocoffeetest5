@@ -23,7 +23,7 @@
     [self.view addGestureRecognizer:backTap];
 
     // 添加 图片
-    self.photoScrollView.frame = CGRectMake(0, s_height/2-200, s_width, 400);
+    self.photoScrollView.frame = CGRectMake(0, s_height/2-s_width/kTopPictureRatio/2, s_width, s_width/kTopPictureRatio);
     
     [self.photoScrollView setScrollViewSize:self.photoScrollView.frame.size delegate:self imageArray:self.pictureArray showPageControl:NO withPageControlLocation:0];
     self.photoScrollView.contentOffset = CGPointMake(s_width*self.currentPage, 0);

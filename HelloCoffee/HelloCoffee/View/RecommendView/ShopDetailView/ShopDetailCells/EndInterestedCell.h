@@ -7,24 +7,26 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PortraitImageButton.h"
 
 @interface EndInterestedCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UIImageView *portraitIV1;
-@property (weak, nonatomic) IBOutlet UIImageView *portraitIV2;
-@property (weak, nonatomic) IBOutlet UIImageView *portraitIV3;
-@property (weak, nonatomic) IBOutlet UIImageView *portraitIV4;
-@property (weak, nonatomic) IBOutlet UIImageView *portraitIV5;
+@property (weak, nonatomic) IBOutlet UIScrollView *portraitScrollView;
 
-@property (nonatomic, strong) NSArray *portraitImagesArray;
+// 头像 ImgBtn 1-10  Tag: 2000-2009
+//@property (weak, nonatomic) PortraitImageButton *portraitImgBtn1;
+//@property (weak, nonatomic) PortraitImageButton *portraitImgBtn2;
+//@property (weak, nonatomic) PortraitImageButton *portraitImgBtn3;
+//@property (weak, nonatomic) PortraitImageButton *portraitImgBtn4;
+//@property (weak, nonatomic) PortraitImageButton *portraitImgBtn5;
+//@property (weak, nonatomic) PortraitImageButton *portraitImgBtn6;
+//@property (weak, nonatomic) PortraitImageButton *portraitImgBtn7;
+//@property (weak, nonatomic) PortraitImageButton *portraitImgBtn8;
+//@property (weak, nonatomic) PortraitImageButton *portraitImgBtn9;
+//@property (weak, nonatomic) PortraitImageButton *portraitImgBtn10;
 
-// Cell 方法
--(void) setInformationWithPortraitImagesArray:(NSArray *)imagesArray; // 传入需要的参数
 
--(void)addPlummetIVAction; // 给Plummet添加方法
-
-
-
-
+// Cell 方法 [ 传入参数、方法]
+-(void) setInformationWithPortraitImagesArray:(NSArray *)imagesArray addTarget:(id)target withPortraitTouchAction:(SEL)portraitAction;
 
 @end

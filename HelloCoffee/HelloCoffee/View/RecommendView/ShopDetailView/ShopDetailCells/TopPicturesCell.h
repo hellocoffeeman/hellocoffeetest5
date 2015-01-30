@@ -13,17 +13,8 @@
 
 @property (weak, nonatomic) IBOutlet PageScrollView *pageScrollView;
 
-@property (weak, nonatomic) IBOutlet UIView *blueView; // width: 5
-@property (weak, nonatomic) IBOutlet UIView *grayView; // width: 2
-@property (weak, nonatomic) IBOutlet UIButton *leftPartButton; // 左边 Btn
-@property (weak, nonatomic) IBOutlet UIButton *rightPartButton; // 右边 Btn
-
-
-
 
 // 为滚动试图添加点击方法
 -(void) setScrollViewDelegate:(id<UIScrollViewDelegate>)delegate imageArray:(NSMutableArray *)imageArray target:(id)target scrollViewAction:(SEL)scrollViewAction;
-// 为 Btn 添加方法
--(void) addTarget:(id)target changeDepartmentAction:(SEL)changeDepartmentAction;
 
 @end

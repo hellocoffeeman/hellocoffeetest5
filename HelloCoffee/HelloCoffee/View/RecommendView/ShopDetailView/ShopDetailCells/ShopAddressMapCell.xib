@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ShopAddressMapCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dianpu-ditu.png" translatesAutoresizingMaskIntoConstraints="NO" id="hJP-AB-iDr">
+                        <rect key="frame" x="16" y="13" width="288" height="142"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="HCh-Dw-VKO">
+                        <rect key="frame" x="58" y="68" width="150" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="6PT-hW-jo8"/>
+                            <constraint firstAttribute="width" constant="150" id="e7i-wn-w20"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大望路 SOHO 现代城 底商 （近北京电视台）" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXR-nI-kvU">
+                        <rect key="frame" x="68" y="68" width="130" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="TSP-np-ipx"/>
+                            <constraint firstAttribute="width" constant="130" id="jBH-TJ-jjM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dianpu-dibiao.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fyb-XV-NwB">
+                        <rect key="frame" x="223" y="74" width="26" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="26" id="MG0-Fa-9Ez"/>
+                            <constraint firstAttribute="height" constant="26" id="hT0-F7-CRB"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hJP-AB-iDr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="3Jm-Yj-hYd"/>
+                    <constraint firstItem="Fyb-XV-NwB" firstAttribute="leading" secondItem="HCh-Dw-VKO" secondAttribute="trailing" constant="15" id="7lv-JM-Hqa"/>
+                    <constraint firstItem="LXR-nI-kvU" firstAttribute="centerX" secondItem="HCh-Dw-VKO" secondAttribute="centerX" id="EMx-m0-9ju"/>
+                    <constraint firstItem="HCh-Dw-VKO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="50" id="LmN-vn-Q1f"/>
+                    <constraint firstItem="HCh-Dw-VKO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="60" id="MbY-2Z-Wgb"/>
+                    <constraint firstItem="hJP-AB-iDr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="O6Q-Fz-ACQ"/>
+                    <constraint firstItem="LXR-nI-kvU" firstAttribute="centerY" secondItem="HCh-Dw-VKO" secondAttribute="centerY" id="PkQ-Lm-Bxr"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="hJP-AB-iDr" secondAttribute="trailing" constant="8" id="e7w-8d-IPT"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="hJP-AB-iDr" secondAttribute="bottom" constant="-4" id="eqi-hE-aY3"/>
+                    <constraint firstItem="Fyb-XV-NwB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="66" id="uPB-vw-TMe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="addressLabel" destination="LXR-nI-kvU" id="DpA-U7-MaH"/>
+                <outlet property="mapImageView" destination="hJP-AB-iDr" id="a31-DD-weF"/>
+                <outlet property="pinImageView" destination="Fyb-XV-NwB" id="811-hF-ydD"/>
+                <outlet property="whiteBorderImageView" destination="HCh-Dw-VKO" id="WmA-L7-f9G"/>
+            </connections>
+            <point key="canvasLocation" x="-90" y="271"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="add_bg.png" width="151" height="51"/>
+        <image name="dianpu-dibiao.png" width="27" height="27"/>
+        <image name="dianpu-ditu.png" width="320" height="160"/>
+    </resources>
+</document>

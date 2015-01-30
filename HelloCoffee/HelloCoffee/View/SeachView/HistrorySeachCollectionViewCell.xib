@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HistrorySeachCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOY-B5-ATW">
+                        <rect key="frame" x="34" y="0.0" width="278" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="8qr-08-7LW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4UP-IB-r7A">
+                        <rect key="frame" x="337" y="15" width="20" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="ZDl-w8-M9B"/>
+                            <constraint firstAttribute="width" constant="16" id="kxC-eL-mEG"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="shanchujilutu@2x">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="btnDown:" destination="gTV-IL-0wX" eventType="touchUpInside" id="B0P-rx-XMB"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="gOY-B5-ATW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="4Af-aR-IBJ"/>
+                <constraint firstItem="4UP-IB-r7A" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="17" id="Qtg-M3-5o5"/>
+                <constraint firstItem="4UP-IB-r7A" firstAttribute="leading" secondItem="gOY-B5-ATW" secondAttribute="trailing" constant="20" id="ch6-Pm-xlY"/>
+                <constraint firstAttribute="trailing" secondItem="4UP-IB-r7A" secondAttribute="trailing" constant="20" id="n7q-Or-CDA"/>
+            </constraints>
+            <connections>
+                <outlet property="delBtn" destination="4UP-IB-r7A" id="WnS-5s-OQd"/>
+                <outlet property="nameLab" destination="gOY-B5-ATW" id="2xj-vN-8s7"/>
+            </connections>
+            <point key="canvasLocation" x="471.5" y="442"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="shanchujilutu@2x" width="320" height="35"/>
+    </resources>
+</document>

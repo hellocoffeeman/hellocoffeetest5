@@ -38,7 +38,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"地图导航";
+    [self makeNavWithTitleLabel:@"地图" withRightBtn:NO rightButtonTitle:nil rightBtnImageURL:nil target:nil rightBtnAction:nil];
     
     //创建对象
     self.locationManager=[[CLLocationManager alloc]init];
@@ -52,10 +52,7 @@
     //    移动10米时 更新数据
     
     self.locationManager.distanceFilter = 10.0f;
-    
-    
-    
-    
+
     self.geocoder = [[CLGeocoder alloc]init];
     
     //    设置地图的显示风格，此处设置使用标准地图

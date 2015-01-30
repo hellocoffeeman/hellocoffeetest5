@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccountBondViewController">
+            <connections>
+                <outlet property="mainTableView" destination="WQq-NG-MsF" id="Wyc-Nv-xXh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gNN-N8-pCK">
+                    <rect key="frame" x="0.0" y="95" width="600" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Sx6-xs-8Q1"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="WQq-NG-MsF">
+                    <rect key="frame" x="-4" y="96" width="608" height="504"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="WQq-NG-MsF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-4" id="45W-7G-Xy6"/>
+                <constraint firstItem="gNN-N8-pCK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ds5-hc-tB1"/>
+                <constraint firstAttribute="bottom" secondItem="WQq-NG-MsF" secondAttribute="bottom" id="KXM-5p-cJ2"/>
+                <constraint firstItem="gNN-N8-pCK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="95" id="MYB-3v-vDY"/>
+                <constraint firstAttribute="trailing" secondItem="gNN-N8-pCK" secondAttribute="trailing" id="VyN-G5-Blw"/>
+                <constraint firstAttribute="trailing" secondItem="WQq-NG-MsF" secondAttribute="trailing" constant="-4" id="c4l-Ei-ebu"/>
+                <constraint firstItem="WQq-NG-MsF" firstAttribute="top" secondItem="gNN-N8-pCK" secondAttribute="bottom" id="x1N-vr-XFA"/>
+            </constraints>
+            <point key="canvasLocation" x="164" y="456"/>
+        </view>
+    </objects>
+</document>

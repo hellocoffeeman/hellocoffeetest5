@@ -44,19 +44,19 @@
     switch (self.type) {
         case WantSight:
 //            [self makeToolBar:@"情景"];
-            [self makeNavWithTitleLabel:@"主题"];
+            [self makeNavWithTitleLabel:@"情景" withRightBtn:NO rightButtonTitle:nil rightBtnImageURL:nil target:nil rightBtnAction:nil];
             break;
         case WantType:
 //            [self makeToolBar:@"商圈"];
-            [self makeNavWithTitleLabel:@"商圈"];
+            [self makeNavWithTitleLabel:@"商圈" withRightBtn:NO rightButtonTitle:nil rightBtnImageURL:nil target:nil rightBtnAction:nil];
             break;
         case WantActivity:
 //            [self makeToolBar:@"活动"];
-            [self makeNavWithTitleLabel:@"情景"];
+            [self makeNavWithTitleLabel:@"活动" withRightBtn:NO rightButtonTitle:nil rightBtnImageURL:nil target:nil rightBtnAction:nil];
             break;
         case WantPrise:
 //            [self makeToolBar:@"单价"];
-            [self makeNavWithTitleLabel:@"单价"];
+            [self makeNavWithTitleLabel:@"单价" withRightBtn:NO rightButtonTitle:nil rightBtnImageURL:nil target:nil rightBtnAction:nil];
             break;
         default:
             break;
@@ -120,6 +120,8 @@
 {
     recommend *shop = [[recommend alloc]init];
     shop.state = @"1";
+    shop.isTabbar=NO;
+    shop.chuangzhiZhuTi=@"详 情";
    self.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:shop animated:YES];
 }

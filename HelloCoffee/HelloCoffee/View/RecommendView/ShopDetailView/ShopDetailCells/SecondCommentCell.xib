@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -8,53 +9,31 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SecondCommentCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="255"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="270"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bianjiwenzhang.png" translatesAutoresizingMaskIntoConstraints="NO" id="1VW-gn-E9V">
-                        <rect key="frame" x="8" y="8" width="304" height="239"/>
-                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </imageView>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UV4-Xx-hPz">
-                        <rect key="frame" x="40" y="126" width="240" height="1"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="1" id="UGD-sC-0oS"/>
-                        </constraints>
-                    </view>
-                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="1qB-ED-AvN">
-                        <rect key="frame" x="8" y="7" width="304" height="239"/>
+                    <tableView clipsSubviews="YES" tag="7002" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="1qB-ED-AvN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="269"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tableView>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstItem="1qB-ED-AvN" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="0rD-Yq-Txg"/>
-                    <constraint firstItem="1VW-gn-E9V" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="23O-Y3-blw"/>
-                    <constraint firstItem="1qB-ED-AvN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-1" id="2i2-Kp-nun"/>
-                    <constraint firstItem="1VW-gn-E9V" firstAttribute="height" secondItem="1qB-ED-AvN" secondAttribute="height" id="GDB-sy-dEJ"/>
-                    <constraint firstItem="1VW-gn-E9V" firstAttribute="width" secondItem="1qB-ED-AvN" secondAttribute="width" id="SeB-ys-cH9"/>
-                    <constraint firstItem="1VW-gn-E9V" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Szf-Yp-mQI"/>
-                    <constraint firstItem="1VW-gn-E9V" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="bbH-gW-z65"/>
-                    <constraint firstItem="1VW-gn-E9V" firstAttribute="trailing" secondItem="1qB-ED-AvN" secondAttribute="trailing" id="cRS-YB-3zn"/>
-                    <constraint firstItem="1qB-ED-AvN" firstAttribute="leading" secondItem="1VW-gn-E9V" secondAttribute="leading" id="f7S-TH-Mxd"/>
-                    <constraint firstItem="1VW-gn-E9V" firstAttribute="centerY" secondItem="UV4-Xx-hPz" secondAttribute="centerY" constant="1" id="fYf-Aw-Qi4"/>
-                    <constraint firstItem="1qB-ED-AvN" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="gGg-Pc-14Q"/>
-                    <constraint firstItem="UV4-Xx-hPz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="32" id="pzB-Uj-Yah"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="UV4-Xx-hPz" secondAttribute="trailing" constant="32" id="sHX-8e-IpS"/>
-                    <constraint firstItem="1VW-gn-E9V" firstAttribute="centerX" secondItem="UV4-Xx-hPz" secondAttribute="centerX" id="vUg-uy-UH9"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="1qB-ED-AvN" secondAttribute="trailing" constant="-8" id="0T5-Eb-tV9"/>
+                    <constraint firstItem="1qB-ED-AvN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="4dv-g8-REx"/>
+                    <constraint firstItem="1qB-ED-AvN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="LWv-Er-6v5"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="1qB-ED-AvN" secondAttribute="bottom" constant="-8" id="yqe-4I-O6V"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="commentTableView" destination="1qB-ED-AvN" id="SnN-ch-TkZ"/>
             </connections>
-            <point key="canvasLocation" x="308" y="346.5"/>
+            <point key="canvasLocation" x="330" y="492"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="bianjiwenzhang.png" width="309" height="238"/>
-    </resources>
 </document>

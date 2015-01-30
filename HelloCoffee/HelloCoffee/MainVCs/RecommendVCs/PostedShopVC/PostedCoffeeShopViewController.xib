@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PostedCoffeeShopViewController">
+            <connections>
+                <outlet property="centerTableView" destination="beN-FF-cZA" id="ghf-jR-gXl"/>
+                <outlet property="detailAddressLF" destination="Wf4-BH-f0A" id="C6S-0Q-cv8"/>
+                <outlet property="idNumberLF" destination="9lc-XB-BoM" id="nhl-HI-lgf"/>
+                <outlet property="mainScrollView" destination="9bS-iP-eTD" id="IKm-Ue-h4y"/>
+                <outlet property="permitPhotoLF" destination="SPR-lq-yHB" id="3hP-f9-qje"/>
+                <outlet property="phoneNumberLF" destination="Sec-5n-244" id="PGW-rV-QYs"/>
+                <outlet property="realNameLF" destination="rVO-v6-QJm" id="0Ae-Mj-TQ9"/>
+                <outlet property="rightTableView" destination="OO9-eM-m2z" id="gV3-qq-5DA"/>
+                <outlet property="shopAddressLF" destination="LpE-qi-REJ" id="BsV-Kf-NCi"/>
+                <outlet property="shopKeeperSubmitButton" destination="IT0-s8-of2" id="dqK-jb-exW"/>
+                <outlet property="shopNameLF" destination="w4d-dM-6MS" id="BQT-uw-dfG"/>
+                <outlet property="shopkeeperApplyButton" destination="pCm-Re-wFJ" id="oNg-hk-cMh"/>
+                <outlet property="submitButton" destination="yxD-AX-zNn" id="hBm-4y-kxr"/>
+                <outlet property="twoTableView" destination="bdq-FP-dye" id="L0D-Xo-osj"/>
+                <outlet property="uploadImageLF" destination="rzt-AB-A2B" id="Ycl-b5-5iC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wordsLabel" destination="96k-Wv-JT3" id="WBj-Ga-EpE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" id="9bS-iP-eTD">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" id="w4d-dM-6MS" customClass="LabelFieldView">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.20000000000000001" green="0.53333333329999999" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" id="LpE-qi-REJ" customClass="LabelFieldView">
+                            <rect key="frame" x="0.0" y="52" width="320" height="49"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.20000000000000001" green="0.53333333329999999" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" id="Wf4-BH-f0A" customClass="LabelFieldView">
+                            <rect key="frame" x="0.0" y="104" width="320" height="49"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.20000000000000001" green="0.53333333329999999" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" id="SPR-lq-yHB" customClass="LabelFieldView">
+                            <rect key="frame" x="0.0" y="155" width="320" height="49"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.31995076290000002" green="0.65926780389999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" id="rzt-AB-A2B" customClass="LabelFieldView">
+                            <rect key="frame" x="0.0" y="207" width="320" height="71"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.20000000000000001" green="0.53333333329999999" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" id="Sec-5n-244" customClass="LabelFieldView">
+                            <rect key="frame" x="0.0" y="386" width="320" height="49"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.20000000000000001" green="0.53333333329999999" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" id="9lc-XB-BoM" customClass="LabelFieldView">
+                            <rect key="frame" x="0.0" y="286" width="320" height="49"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.31995076290000002" green="0.65926780389999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view contentMode="scaleToFill" id="rVO-v6-QJm" customClass="LabelFieldView">
+                            <rect key="frame" x="0.0" y="336" width="320" height="49"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.20000000000000001" green="0.53333333329999999" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pCm-Re-wFJ">
+                            <rect key="frame" x="15" y="477" width="135" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" image="application_but.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="shopKeeperApplyAction:" destination="-1" eventType="touchUpInside" id="QTh-6j-UTY"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yxD-AX-zNn">
+                            <rect key="frame" x="170" y="477" width="135" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" image="submit_but.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="submitAction:" destination="-1" eventType="touchUpInside" id="tvK-PS-0Ej"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您的身份信息，仅用于你好咖啡 Hello Coffee的实名制审核过程，不会泄露给第三方使用。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="96k-Wv-JT3">
+                            <rect key="frame" x="8" y="515" width="304" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="IT0-s8-of2">
+                            <rect key="frame" x="38" y="436" width="245" height="40"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="submission_but.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="shopKeeperSubmitAction:" destination="-1" eventType="touchUpInside" id="Fvy-jh-XzE"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" id="bdq-FP-dye">
+                            <rect key="frame" x="97" y="140" width="208" height="145"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="beN-FF-cZA">
+                                    <rect key="frame" x="0.0" y="0.0" width="102" height="145"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </tableView>
+                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="OO9-eM-m2z">
+                                    <rect key="frame" x="105" y="0.0" width="103" height="145"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </tableView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.23256601340830463" green="0.21704781954242036" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                    </subviews>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <point key="canvasLocation" x="307" y="362"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="application_but.png" width="270" height="80"/>
+        <image name="submission_but.png" width="489" height="80"/>
+        <image name="submit_but.png" width="270" height="80"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
